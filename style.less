@@ -437,6 +437,10 @@ a.disabled {
 
 /* =Project Images
 -------------------------------------------------------------- */
+.slideshow-wrapper {
+	position: relative;
+}
+
 .slideshow-meta {
  	margin-top: -17px;
  	width: 100%;
@@ -477,13 +481,14 @@ a.disabled {
 }
 
 .slideshow-wrapper .numbers a.activeSlide {
-text-decoration: underline;
+	text-decoration: underline;
+	color: @gold;
 }
 .pager {
-	position: absolute;
-	right:5px;
-	bottom: 10px;
-	z-index: 100;
+ 	position: absolute;
+	bottom: 25px;
+	right: 5px;
+ 	z-index: 100;
 	font-weight: bold;
 	
 		a.activeSlide{
@@ -784,7 +789,6 @@ article.comment {
 
 #colophon {
 	padding: 5px 0 0;
-	position: fixed; 
 	bottom: 0;
 	background: #888;
 	text-align: center;

@@ -28,8 +28,7 @@ jQuery(function($){
 	$('#secondary').css({ 'height':(( $(window).height())) });
 
  
-	//Append the slideshow pager inside the slideshow-meta box
-	$('.slideshow-meta').append( $('.pager') );
+ 	 
 
 
 }); //Last
