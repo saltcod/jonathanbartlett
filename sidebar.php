@@ -30,11 +30,10 @@
 
 
 			 <?php if ( 'projects' == get_post_type() || is_page( 'portfolio' )) {
-
 						paginate_links(wp_nav_menu( array('menu' => 'Portfolio' )) ); 
-
-			} 
+						} 
 
 			?>
+
 
 		</div>

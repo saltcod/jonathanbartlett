@@ -97,7 +97,7 @@ table {
 body{
 	font: 14px/26px "Helvetica Neue", Helvetica, serif;
  	background: #f3f3f3;
-	background: rgba(233,232,232,.9);
+ 	background: #f3f3f3;
 
 	color: #444;
   }
@@ -229,10 +229,12 @@ h1.entry-title{
 /* =Sidebar and Menu
 -------------------------------------------------------------- */
 
+body.page-home #secondary {
+	background: rgba(233,232,232,.9);	
+}
 
 #secondary {
  	background: #f3f3f3;
-	background: rgba(233,232,232,.9);
 	padding-left: 15px;
 	max-width: 190px;
 	min-width: 190px;
@@ -346,6 +348,9 @@ h1.entry-title{
 			}
 		} 
   
+		a.mailto {
+			font-size: 12px;
+		}
 }
 
 /* #menu-portfolio  */
