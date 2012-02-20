@@ -181,28 +181,15 @@ body {
 }
 #main {
   overflow: hidden;
-  box-shadow: 0 0 5px #5b83ad;
   padding: 0 10px;
 }
 header#branding {
   padding: 5px;
 }
-#primary {
-  border: 1px solid #ddd;
-}
-#secondary {
-  border: 1px solid #ccc;
-}
 #colophon {
   clear: both;
   display: block;
   width: 100%;
-}
-.container {
-  border: 1px dotted purple;
-}
-.row {
-  border: 2px dashed #800080;
 }
 /* =Type and basics
 -------------------------------------------------------------- */
@@ -448,7 +435,8 @@ a.disabled {
   position: relative;
 }
 .slideshow-meta {
-  margin-top: -17px;
+  margin-top: 4px;
+  border-top: 1px solid #ccc;
   width: 100%;
   float: left;
   overflow: hidden;
@@ -742,6 +730,7 @@ article.comment {
   font-style: italic;
   font-size: 12px;
   color: white;
+  margin-left: -20px;
 }
 #colophon a {
   color: white;
