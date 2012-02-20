@@ -28,6 +28,20 @@ jQuery(function($){
 	$('#secondary').css({ 'height':(( $(window).height())) });
 
  
+
+ 	//SweetPages slider for sidebar
+	// Calling the jQuery plugin and splitting the
+	// #holder UL into pages of 3 LIs each:
+
+	$('.menu-portfolio-container').sweetPages({perPage:3});
+
+	// The default behaviour of the plugin is to insert the 
+	// page links in the ul, but we need them in the main container:
+
+	var controls = $('.swControls').detach();
+	controls.appendTo('#main');
+
+ 
  	 
 
 

@@ -35,6 +35,10 @@ function xx_load_my_scripts() {
     wp_register_script( 'masonry', get_template_directory_uri() .'/js/jquery.masonry.min.js');
     wp_enqueue_script( 'masonry' );
 
+    wp_register_script( 'sweetpages', get_template_directory_uri() .'/js/sweetpages.js');
+    wp_enqueue_script( 'sweetpages' );
+
+
 } 
 
 add_action('wp_enqueue_scripts', 'xx_load_my_scripts');

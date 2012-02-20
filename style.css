@@ -380,6 +380,55 @@ a.disabled {
 .menu-portfolio-container a {
   font-size: 14px;
 }
+/* Sidebar Slider */
+.menu-portfolio-container {
+  /* The unordered list that is to be split into pages */
+
+  width: 205px;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 10px;
+  /*	CSS3 inner shadow (the webkit one is commeted, because Google Chrome
+		does not like rounded corners combined with inset shadows): */
+
+}
+.swControls {
+  position: absolute;
+  margin-top: 100px;
+}
+a.swShowPage {
+  /* The links that initiate the page slide */
+
+  background-color: #444444;
+  float: left;
+  height: 15px;
+  margin: 4px 3px;
+  text-indent: -9999px;
+  width: 15px;
+  /*border:1px solid #ccc;*/
+
+  /* CSS3 rounded corners */
+
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+}
+a.swShowPage:hover, a.swShowPage.active {
+  background-color: #2993dd;
+  /*	CSS3 inner shadow */
+
+}
+#holder li {
+  background-color: #F4F4F4;
+  list-style-type: none;
+  /* Regular CSS3 box shadows (not inset): */
+
+}
+.clear {
+  /* This class clears the floated elements */
+
+  clear: both;
+}
 /* =Content
 -------------------------------------------------------------- */
 .entry-meta {
