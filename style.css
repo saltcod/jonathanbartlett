@@ -439,7 +439,7 @@ body.blog header.entry-header, body.single-format-standard header.entry-header {
 }
 body.blog header.entry-header .entry-meta, body.single-format-standard header.entry-header .entry-meta {
   position: relative;
-  top: 12px;
+  top: 13px;
 }
 body.blog header.entry-header .entry-meta span.sep,
 body.single-format-standard header.entry-header .entry-meta span.sep,

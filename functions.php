@@ -75,7 +75,7 @@ register_post_type(
 		'supports' => array('title','editor','custom-fields','thumbnail','page-attributes',),
 		'labels' => array (
 		  'name' => 'Projects',
-		  'singular_name' => 'project',
+		  'singular_name' => 'Project',
 		  'menu_name' => 'Projects',
 		  'add_new' => 'Add project',
 		  'add_new_item' => 'Add New project',
