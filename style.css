@@ -458,6 +458,81 @@ body.blog span.cat-links a:hover, body.single-format-standard span.cat-links a:h
 body.blog .entry-content, body.single-format-standard .entry-content {
   margin-top: 25px;
 }
+#holder li {
+  background-color: #F4F4F4;
+  list-style-type: none;
+  /* Regular CSS3 box shadows (not inset): */
+
+}
+.clear {
+  /* This class clears the floated elements */
+
+  clear: both;
+}
+span#more-projects {
+  margin-top: 35px;
+  font-weight: bold;
+  text-transform: uppercase;
+  float: left;
+  border-top: 1px solid #ccc;
+  width: 170px;
+  padding-top: 15px;
+  color: #888;
+  font-size: 12px;
+}
+/* Hide the scrolling bar by default */
+.jspVerticalBar {
+  display: none;
+}
+/* =Blog / update content
+-------------------------------------------------------------- */
+body.blog #primary, body.single-format-standard #primary {
+  margin: 45px 0;
+}
+body.blog article, body.single-format-standard article {
+  margin: 0 0 55px 0;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ccc;
+}
+body.blog article.post h1.entry-title, body.single-format-standard article.post h1.entry-title {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+body.blog header.entry-header, body.single-format-standard header.entry-header {
+  border-bottom: 1px dotted #ccc;
+}
+body.blog header.entry-header .entry-meta, body.single-format-standard header.entry-header .entry-meta {
+  position: relative;
+  top: 12px;
+}
+body.blog header.entry-header .entry-meta span.sep,
+body.single-format-standard header.entry-header .entry-meta span.sep,
+body.blog header.entry-header .entry-meta span.byline,
+body.single-format-standard header.entry-header .entry-meta span.byline,
+body.blog header.entry-header .entry-meta a time,
+body.single-format-standard header.entry-header .entry-meta a time {
+  background: #F3F3F3;
+  color: #888;
+}
+body.blog header.entry-header .entry-meta a time, body.single-format-standard header.entry-header .entry-meta a time {
+  padding-right: 5px;
+}
+body.blog span.cat-links, body.single-format-standard span.cat-links {
+  background: url("images/bookmark.png") no-repeat;
+  padding-left: 15px;
+}
+body.blog span.cat-links a, body.single-format-standard span.cat-links a {
+  border-bottom: 1px dotted;
+}
+body.blog span.cat-links a:hover, body.single-format-standard span.cat-links a:hover {
+  color: black;
+  border-bottom: 1px solid;
+}
+body.blog .entry-content, body.single-format-standard .entry-content {
+  margin-top: 25px;
+}
 /* =Content
 -------------------------------------------------------------- */
 .entry-meta {
