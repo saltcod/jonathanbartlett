@@ -1,7 +1,7 @@
 jQuery(function($){
 
  	// Backstretch
-	var images=["http://jb.waterstreetgm.org/jonathanbartlett/wp-content/themes/jonathanbartlett/images/bg_1.jpg", "http://jb.waterstreetgm.org/jonathanbartlett/wp-content/themes/jonathanbartlett/images/bg_2.jpg", "http://jb.waterstreetgm.org/jonathanbartlett/wp-content/themes/jonathanbartlett/images/bg_3.jpg"];
+	var images=["http://jb.waterstreetgm.org/wp-content/themes/jonathanbartlett/images/bg_1.jpg", "http://jb.waterstreetgm.org/wp-content/themes/jonathanbartlett/images/bg_2.jpg", "http://jb.waterstreetgm.org/wp-content/themes/jonathanbartlett/images/bg_3.jpg"];
 	var random_image_filename = Math.floor(images.length * Math.random());
 
 	if($('body').hasClass('home')){
