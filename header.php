@@ -52,7 +52,9 @@
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/js/jscrollpane.css" type="text/css" media="screen" title="no title" charset="utf-8">
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>" type="text/css" media="screen, projection" /> 
 
-
+<!-- Typekit -->
+<script type="text/javascript" src="http://use.typekit.com/vty4lrm.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
