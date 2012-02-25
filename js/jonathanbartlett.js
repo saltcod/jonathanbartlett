@@ -28,11 +28,12 @@ jQuery(function($){
 	//Set the height of the sidebar == to the window height
 	$('#secondary').css({ 'height':(( $(window).height())) });
 
+ 
  //Portfolio menu scrollability
 	$(function(){
 		$('.menu-portfolio-container').jScrollPane();
 	}); 	 
-
+ 
 	//Do some hide and seek on "MORE PROJECTS" in the sidebar
 	
 	$('#secondary').hover(
