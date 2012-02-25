@@ -10,8 +10,9 @@
 		<div id="secondary" class="widget-area group threecol" role="complementary">
 			<header id="branding" class="group" role="banner">
 					<hgroup>
-						<h1 id="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-						<!-- <h2 id="site-description"><?php bloginfo( 'description' ); ?></h2> -->
+						 
+						<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"> <img src="<?php echo get_template_directory_uri();?>/images/logo.png" alt="logo"></a></h1>
+						<!-- <h2 id="site-description"><?php bloginfo( 'description' ); ?>  -->
 					</hgroup>
 				</header><!-- #branding -->
 

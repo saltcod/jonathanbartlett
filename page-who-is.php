@@ -103,7 +103,7 @@ get_sidebar(); ?>
 
 
 				<div class="sincerely who-is">
-					Sincerely, JB
+					<img src="<?php echo get_template_directory_uri();?>/images/sincerely.png" alt="sincerely, JB">
 				</div>
 
 
