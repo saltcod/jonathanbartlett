@@ -19,7 +19,8 @@ jQuery(function($){
 
 	$container.imagesLoaded( function(){
 	  $container.masonry({
-	    itemSelector : '.who-is'
+	    itemSelector : '.who-is',
+			columnWidth: 65
 	  });
 	});
 
@@ -27,9 +28,25 @@ jQuery(function($){
 	//Set the height of the sidebar == to the window height
 	$('#secondary').css({ 'height':(( $(window).height())) });
 
- 
- 	 
+ //Portfolio menu scrollability
+	$(function(){
+		$('.menu-portfolio-container').jScrollPane();
+	}); 	 
 
+	//Do some hide and seek on "MORE PROJECTS" in the sidebar
+	
+	$('#secondary').hover(
+	        function(){
+	        	$('span#more-projects').text("Scroll for more").fadeIn();
+	        	$('.jspVerticalBar').fadeIn();
+
+					
+	        	},
+	        function(){
+ 	        	$('span#more-projects').text("More Projects").fadeIn();
+						$('.jspVerticalBar').fadeOut();
+	        });
+	
 
 }); //Last
 

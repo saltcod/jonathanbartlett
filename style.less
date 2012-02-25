@@ -19,7 +19,11 @@ Yellow Selection: rgb(255,255,158);
 @light-blue: @blue + #111;
 @gold: #a48403;
 
-
+* {
+ -moz-box-sizing: border-box;
+ -webkit-box-sizing: border-box;
+ box-sizing: border-box;
+} 
 
 /* =Eric Meyer's CSS Resets
 -------------------------------------------------------------- */
@@ -102,6 +106,8 @@ body{
 	color: #444;
   }
 
+
+
 #page {
 	display: block;
 	margin: 0 auto;
@@ -110,7 +116,10 @@ body{
 #main{
 	overflow:hidden;
 	padding: 0 10px;
-}
+ }
+
+ 
+
 header#branding{
 	padding:  5px;
 }
@@ -128,8 +137,7 @@ header#branding hgroup{
 article{
 }
 
-#secondary {
- }
+ 
 #colophon {
 	clear: both;
 	display: block;
@@ -148,7 +156,6 @@ article{
 a{
 	color:#444;
 	text-decoration: none;
-	border-bottom: 1px solid;
 	.transition(.5s, ease-out);
 	
 }
@@ -235,9 +242,9 @@ body.page-home #secondary {
 
 #secondary {
  	background: #f3f3f3;
-	padding-left: 15px;
-	max-width: 190px;
-	min-width: 190px;
+	padding:100px 0 0 15px;
+	max-width: 220px;
+	min-width: 220px;
  
 		ul#portfolio-items{
 			background: #eee;
@@ -252,6 +259,7 @@ body.page-home #secondary {
 		ul.sub-menu{
 			display: none;
 		}
+	
 		li.current-menu-item, li.current-menu-parent{
 			font-weight: bold;
 				
@@ -268,13 +276,12 @@ body.page-home #secondary {
 							color: #888;							
 						}
 
-			
 					li.current-menu-item{
 						font-weight: normal;
 						}
 					}
 				}			
-			 	
+			
  
 		#access {
 			display: block;
@@ -336,13 +343,7 @@ body.page-home #secondary {
 				height: auto;
 			}
 
-			li:hover > a,
-			ul ul :hover > a {
-				background: #dedede;
-			}
-			ul ul a:hover {
-				background: #cecece;
-			}
+		 
 			ul li:hover > ul {
 				display: block;
 			}
@@ -351,6 +352,15 @@ body.page-home #secondary {
 		a.mailto {
 			font-size: 12px;
 		}
+}
+
+
+
+/* #menu-main  */
+
+#secondary #access #menu-main li.current-menu-item a, 
+#secondary #access #menu-main li:hover > a {
+		color: #888;
 }
 
 /* #menu-portfolio  */
@@ -363,13 +373,87 @@ a.disabled {
 
 .menu-portfolio-container {
 	clear: both;
-		
+	height: 125px;
+ 		
 		a {
 			font-size: 14px;
 		}
 }
 
- 
+span#more-projects {
+	margin-top: 35px;
+	font-weight: bold;
+	text-transform: uppercase;
+	float: left;
+	border-top: 1px solid #ccc;
+	width: 170px;
+	padding-top: 15px;
+	color: #888;
+	font-size: 12px;
+}
+
+/* Hide the scrolling bar by default */
+.jspVerticalBar {
+	display: none;
+}
+
+
+/* =Blog / update content
+-------------------------------------------------------------- */
+body.blog, body.single-format-standard {
+	#primary {
+ 		margin: 45px 0;
+	}
+	
+	article {
+		margin: 0 0 55px 0;
+		padding-bottom: 25px;
+		border-bottom: 1px solid #ccc;
+	}
+  
+	article.post h1.entry-title {
+		font-size: 18px; 
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-bottom: 0px;		
+	}
+	 
+	header.entry-header {
+		border-bottom: 1px dotted #ccc;
+	}
+	
+	header.entry-header .entry-meta {
+		position: relative;
+		top: 12px;
+
+			span.sep, span.byline, a time {
+				background: #F3F3F3;
+				color: #888;
+			}
+
+			a time {
+				padding-right: 5px;
+			}
+}
+	span.cat-links{
+		background: url("images/bookmark.png") no-repeat;
+		padding-left: 15px;
+			a {
+				border-bottom: 1px dotted;
+				&:hover{
+					color: black;
+					border-bottom: 1px solid;
+				}
+			}
+		
+	}
+	
+	.entry-content{
+		margin-top: 25px;
+	}
+}
+
+
 /* =Content
 -------------------------------------------------------------- */
 
@@ -464,8 +548,12 @@ a.disabled {
 		}
 
 	.slideshow-description{
-		overflow:hidden;
- 		clear: both;		
+
+ 		clear: both;	
+
+			p{
+				width: 470px;
+			}
 	}
 	.slideshow-description p{
 		padding: 0 15px 5px;
@@ -509,14 +597,13 @@ a.disabled {
 body.page-who-is #content {
 	margin-top: 25px;
 }
- 
+  
 .who-is {
 	float: left;
 	background: white;
-	margin-right: 25px;
 	margin-bottom: 25px;
 	padding: 25px;
-	width: 255px;
+	width: 290px;
 		
 		h4 {
 			text-transform: uppercase;
@@ -526,13 +613,14 @@ body.page-who-is #content {
 }
 
 .hello {
-	width: 590px;
+	width: 615px;
 	margin-bottom: 25px;
 	background: #fff;
 	padding: 25px;
 		
 		h2{
 			font: 200 60px archer;
+			margin: 0;
 		}
 }
 
@@ -542,8 +630,7 @@ body.page-who-is #content {
  
 .twentyfour-hours {
 	border: 5px solid @gold;
-	width: 245px;
-	 
+ 	 
 		a {
 			color: @gold;
 		}
@@ -789,6 +876,7 @@ article.comment {
 -------------------------------------------------------------- */
 
 #colophon {
+	position: fixed;
 	padding: 5px 0 0;
 	bottom: 0;
 	background: #888;
@@ -797,8 +885,7 @@ article.comment {
 	font-style: italic;
 	font-size: 12px;
 	color: white;
-	margin-left: -20px;
-		a {
+ 		a {
 			color: white;
 		}
 		
@@ -825,10 +912,10 @@ body {-webkit-tap-highlight-color: rgb(255,255,158);}
 
  
 
-@media only screen and (min-width: 368px) and (max-width: 1025px) {
+@media only screen and (min-width: 368px) and (max-width: 985px) {
 
 	.hello{
-		width: 255px;
+		width: 290px;
 		.transition(1s, ease-out);
 
 			h2 {

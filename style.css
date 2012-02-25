@@ -21,6 +21,11 @@ Yellow Selection: rgb(255,255,158);
     More info at: http://lesselements.com
 -----------------------------------------------------*/
 /* Colour Variables */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 /* =Eric Meyer's CSS Resets
 -------------------------------------------------------------- */
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -196,7 +201,6 @@ header#branding {
 a {
   color: #444;
   text-decoration: none;
-  border-bottom: 1px solid;
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
@@ -268,9 +272,9 @@ body.page-home #secondary {
 }
 #secondary {
   background: #f3f3f3;
-  padding-left: 15px;
-  max-width: 190px;
-  min-width: 190px;
+  padding: 100px 0 0 15px;
+  max-width: 220px;
+  min-width: 220px;
 }
 #secondary ul#portfolio-items {
   background: #eee;
@@ -356,17 +360,15 @@ body.page-home #secondary {
   width: 10em;
   height: auto;
 }
-#secondary #access li:hover > a, #secondary #access ul ul :hover > a {
-  background: #dedede;
-}
-#secondary #access ul ul a:hover {
-  background: #cecece;
-}
 #secondary #access ul li:hover > ul {
   display: block;
 }
 #secondary a.mailto {
   font-size: 12px;
+}
+/* #menu-main  */
+#secondary #access #menu-main li.current-menu-item a, #secondary #access #menu-main li:hover > a {
+  color: #888;
 }
 /* #menu-portfolio  */
 a.disabled {
@@ -376,9 +378,74 @@ a.disabled {
 }
 .menu-portfolio-container {
   clear: both;
+  height: 125px;
 }
 .menu-portfolio-container a {
   font-size: 14px;
+}
+span#more-projects {
+  margin-top: 35px;
+  font-weight: bold;
+  text-transform: uppercase;
+  float: left;
+  border-top: 1px solid #ccc;
+  width: 170px;
+  padding-top: 15px;
+  color: #888;
+  font-size: 12px;
+}
+/* Hide the scrolling bar by default */
+.jspVerticalBar {
+  display: none;
+}
+/* =Blog / update content
+-------------------------------------------------------------- */
+body.blog #primary, body.single-format-standard #primary {
+  margin: 45px 0;
+}
+body.blog article, body.single-format-standard article {
+  margin: 0 0 55px 0;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ccc;
+}
+body.blog article.post h1.entry-title, body.single-format-standard article.post h1.entry-title {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+body.blog header.entry-header, body.single-format-standard header.entry-header {
+  border-bottom: 1px dotted #ccc;
+}
+body.blog header.entry-header .entry-meta, body.single-format-standard header.entry-header .entry-meta {
+  position: relative;
+  top: 12px;
+}
+body.blog header.entry-header .entry-meta span.sep,
+body.single-format-standard header.entry-header .entry-meta span.sep,
+body.blog header.entry-header .entry-meta span.byline,
+body.single-format-standard header.entry-header .entry-meta span.byline,
+body.blog header.entry-header .entry-meta a time,
+body.single-format-standard header.entry-header .entry-meta a time {
+  background: #F3F3F3;
+  color: #888;
+}
+body.blog header.entry-header .entry-meta a time, body.single-format-standard header.entry-header .entry-meta a time {
+  padding-right: 5px;
+}
+body.blog span.cat-links, body.single-format-standard span.cat-links {
+  background: url("images/bookmark.png") no-repeat;
+  padding-left: 15px;
+}
+body.blog span.cat-links a, body.single-format-standard span.cat-links a {
+  border-bottom: 1px dotted;
+}
+body.blog span.cat-links a:hover, body.single-format-standard span.cat-links a:hover {
+  color: black;
+  border-bottom: 1px solid;
+}
+body.blog .entry-content, body.single-format-standard .entry-content {
+  margin-top: 25px;
 }
 /* =Content
 -------------------------------------------------------------- */
@@ -460,8 +527,10 @@ a.disabled {
   font-style: italic;
 }
 .slideshow-meta .slideshow-description {
-  overflow: hidden;
   clear: both;
+}
+.slideshow-meta .slideshow-description p {
+  width: 470px;
 }
 .slideshow-meta .slideshow-description p {
   padding: 0 15px 5px;
@@ -498,10 +567,9 @@ body.page-who-is #content {
 .who-is {
   float: left;
   background: white;
-  margin-right: 25px;
   margin-bottom: 25px;
   padding: 25px;
-  width: 255px;
+  width: 290px;
 }
 .who-is h4 {
   text-transform: uppercase;
@@ -509,20 +577,20 @@ body.page-who-is #content {
   font-weight: bold;
 }
 .hello {
-  width: 590px;
+  width: 615px;
   margin-bottom: 25px;
   background: #fff;
   padding: 25px;
 }
 .hello h2 {
   font: 200 60px archer;
+  margin: 0;
 }
 .avatar img {
   width: 275px;
 }
 .twentyfour-hours {
   border: 5px solid #a48403;
-  width: 245px;
 }
 .twentyfour-hours a {
   color: #a48403;
@@ -727,6 +795,7 @@ article.comment {
 /* =Footer
 -------------------------------------------------------------- */
 #colophon {
+  position: fixed;
   padding: 5px 0 0;
   bottom: 0;
   background: #888;
@@ -735,7 +804,6 @@ article.comment {
   font-style: italic;
   font-size: 12px;
   color: white;
-  margin-left: -20px;
 }
 #colophon a {
   color: white;
@@ -760,9 +828,9 @@ body {
 }
 /* =Reponsive styles
 -------------------------------------------------------------- */
-@media only screen and (min-width: 368px) and (max-width: 1025px) {
+@media only screen and (min-width: 368px) and (max-width: 985px) {
   .hello {
-    width: 255px;
+    width: 290px;
     -webkit-transition: all 1s ease-out;
     -moz-transition: all 1s ease-out;
     transition: all 1s ease-out;
