@@ -59,6 +59,39 @@ add_filter( 'body_class', 'add_body_class' );
 
 
 
+/* Register the 'Projects' post type */
+register_post_type(
+	'projects', 
+		array(	
+		'label' => 'Projects',
+		'description' => '',
+		'public' => true,
+		'show_ui' => true,
+		'show_in_menu' => true,
+		'capability_type' => 'post',
+		'hierarchical' => true,
+		'rewrite' => array('slug' => ''),
+		'query_var' => true,
+		'supports' => array('title','editor','custom-fields','thumbnail','page-attributes',),
+		'labels' => array (
+		  'name' => 'Projects',
+		  'singular_name' => 'project',
+		  'menu_name' => 'Projects',
+		  'add_new' => 'Add project',
+		  'add_new_item' => 'Add New project',
+		  'edit' => 'Edit',
+		  'edit_item' => 'Edit project',
+		  'new_item' => 'New project',
+		  'view' => 'View project',
+		  'view_item' => 'View project',
+		  'search_items' => 'Search Projects',
+		  'not_found' => 'No Projects Found',
+		  'not_found_in_trash' => 'No Projects Found in Trash',
+		  'parent' => 'Parent project',
+),) );
+
+
+
 
 if ( ! function_exists( 'toolbox_setup' ) ):
 /**
