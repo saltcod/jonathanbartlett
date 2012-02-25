@@ -951,7 +951,9 @@ body {
 cols    1     2      3
 px      68    160    252    */
 @media only screen and (max-width: 767px) {
-  
+  #colophon {
+    position: relative;
+  }
 }
 /*		iPhone wide Layout: 480px.  */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
