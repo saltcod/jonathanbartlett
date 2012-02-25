@@ -1027,6 +1027,8 @@ body {-webkit-tap-highlight-color: rgb(255,255,158);}
 
 @media only screen and (min-width: 368px) and (max-width: 985px) {
 
+	
+
 	.hello{
 		width: 290px;
 		.transition(1s, ease-out);
@@ -1041,15 +1043,20 @@ body {-webkit-tap-highlight-color: rgb(255,255,158);}
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
-	body {
-	 
-		 
+	body {}
+	
+	 #secondary{
+		background: green;
+		max-width: none;
+		min-width: none;
 		}
+	
+	
 }
 
 
 
-/*		iPhone standard layout: 320px.
+/*		iPhone standard layout: 320px. - Narrowist
 		Gutters: 24px.
 		Outer margins: 34px.
 		Inherits styles from: Default Layout.
@@ -1065,16 +1072,36 @@ px      68    160    252    */
 	}
 
 }
+ #secondary{
+	border: 10px solid green; 
+	max-width: none;
+	min-width: none;
+	padding-left: 75px;
+	max-height: 655px;
+	}
 
+body{
+	&.blog,
+	&.single-post,
+	&.page-who-is{
+			#secondary {
+ 				max-height: 375px;
+				}
+		}
+} 
+ 
 
 
 /*		iPhone wide Layout: 480px.  */
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 
-	body {
-	 
-	 
-	}
+	 #secondary{
+		border: 10px solid red; 
+		max-width: none;
+		min-width: none;
+		}
+	
+	body {}
 
 }
