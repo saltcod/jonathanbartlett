@@ -366,6 +366,10 @@ body.page-home #secondary {
 #secondary a.mailto {
   font-size: 12px;
 }
+#secondary span.mailto {
+  float: left;
+  margin-top: 25px;
+}
 /* #menu-main  */
 #secondary #access #menu-main li.current-menu-item a, #secondary #access #menu-main li:hover > a {
   color: #888;
