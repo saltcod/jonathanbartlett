@@ -620,9 +620,6 @@ body.blog .entry-content, body.single-format-standard .entry-content {
   clear: both;
 }
 .slideshow-meta .slideshow-description p {
-  width: 470px;
-}
-.slideshow-meta .slideshow-description p {
   padding: 0 15px 5px;
   font-size: 12px;
   overflow: hidden;
