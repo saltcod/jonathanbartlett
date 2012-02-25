@@ -19,7 +19,8 @@ jQuery(function($){
 
 	$container.imagesLoaded( function(){
 	  $container.masonry({
-	    itemSelector : '.who-is'
+	    itemSelector : '.who-is',
+			columnWidth: 65
 	  });
 	});
 
@@ -27,23 +28,28 @@ jQuery(function($){
 	//Set the height of the sidebar == to the window height
 	$('#secondary').css({ 'height':(( $(window).height())) });
 
+  	 
+ 
+ //Portfolio menu scrollability
+	$(function(){
+		$('.menu-portfolio-container').jScrollPane();
+	}); 	 
  
 
- 	//SweetPages slider for sidebar
-	// Calling the jQuery plugin and splitting the
-	// #holder UL into pages of 3 LIs each:
+	//Do some hide and seek on "MORE PROJECTS" in the sidebar
+	
+	$('#secondary').hover(
+	        function(){
+	        	$('span#more-projects').text("Scroll for more").fadeIn();
+	        	$('.jspVerticalBar').fadeIn();
 
-	$('.menu-portfolio-container').sweetPages({perPage:3});
-
-	// The default behaviour of the plugin is to insert the 
-	// page links in the ul, but we need them in the main container:
-
-	var controls = $('.swControls').detach();
-	controls.appendTo('#main');
-
- 
- 	 
-
+					
+	        	},
+	        function(){
+ 	        	$('span#more-projects').text("More Projects").fadeIn();
+						$('.jspVerticalBar').fadeOut();
+	        });
+	
 
 }); //Last
 

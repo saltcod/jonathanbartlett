@@ -48,9 +48,11 @@
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 
 
-<link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>" type="text/css" media="screen, projection" />
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/1140.css" type="text/css" media="screen, projection" />
- 
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/js/jscrollpane.css" type="text/css" media="screen" title="no title" charset="utf-8">
+<link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>" type="text/css" media="screen, projection" /> 
+
+
 
 <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />

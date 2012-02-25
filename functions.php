@@ -35,17 +35,18 @@ function xx_load_my_scripts() {
     wp_register_script( 'masonry', get_template_directory_uri() .'/js/jquery.masonry.min.js');
     wp_enqueue_script( 'masonry' );
 
-    wp_register_script( 'sweetpages', get_template_directory_uri() .'/js/sweetpages.js');
-    wp_enqueue_script( 'sweetpages' );
+    wp_register_script( 'jscrollpane', get_template_directory_uri() .'/js/jscrollpane.min.js');
+    wp_enqueue_script( 'jscrollpane' );
 
+    wp_register_script( 'mousewheel', get_template_directory_uri() .'/js/jquery.mousewheel.js');
+    wp_enqueue_script( 'mousewheel' );
 
 } 
 
 add_action('wp_enqueue_scripts', 'xx_load_my_scripts');
 
 
-
-
+ 
 /* Add page slug to body class */ 
 function add_body_class( $classes ){
     global $post;
