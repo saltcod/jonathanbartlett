@@ -931,7 +931,7 @@ body {
     transition: all 1s ease-out;
   }
   .hello h2 {
-    font-size: 30px;
+    font-size: 28px;
     -webkit-transition: all 1s ease-out;
     -moz-transition: all 1s ease-out;
     transition: all 1s ease-out;
