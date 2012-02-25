@@ -941,11 +941,7 @@ body {
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  #secondary {
-    background: green;
-    max-width: none;
-    min-width: none;
-  }
+  
 }
 /*		iPhone standard layout: 320px. - Narrowist
 		Gutters: 24px.
@@ -959,20 +955,7 @@ px      68    160    252    */
     position: relative;
   }
 }
-#secondary {
-  max-width: none;
-  min-width: none;
-  padding-left: 75px;
-  max-height: 655px;
-}
-body.blog #secondary, body.single-post #secondary, body.page-who-is #secondary {
-  max-height: 375px;
-}
 /*		iPhone wide Layout: 480px.  */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  #secondary {
-    border: 10px solid red;
-    max-width: none;
-    min-width: none;
-  }
+  
 }
