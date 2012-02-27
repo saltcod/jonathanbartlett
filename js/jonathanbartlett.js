@@ -14,7 +14,7 @@ jQuery(function($){
 	$('p.slideshow-title').append('"');
 	
 
- //Call jQuery Masonry on the Who Is page
+//Call jQuery Masonry on the Who Is page
 	var $container = $('body.page-who-is #primary #content');
 
 	$container.imagesLoaded( function(){
@@ -25,36 +25,45 @@ jQuery(function($){
 	});
 
 
-	//Set the height of the sidebar == to the window height
-	$('#secondary').css({ 'height':(( $(window).height())) });
+ //Show 12 links at a time in the portfolio menu
 
-  	 
- 
- //Portfolio menu scrollability
-	$(function(){
-		$('.menu-portfolio-container').jScrollPane();
-	}); 	 
- 
- 
- //Portfolio menu scrollability
-	$(function(){
-		$('.menu-portfolio-container').jScrollPane();
-	}); 	 
- 
- 	//Do some hide and seek on "MORE PROJECTS" in the sidebar
-	
-	$('#secondary').hover(
-	        function(){
-	        	$('span#more-projects').text("Scroll for more").fadeIn();
-	        	$('.jspVerticalBar').fadeIn();
+	    $('#tertiary').hide();
 
-					
-	        	},
-	        function(){
- 	        	$('span#more-projects').text("More Projects").fadeIn();
-						$('.jspVerticalBar').fadeOut();
-	        });
+	      $('#menu-item-56').click(function() {
+			event.preventDefault();
+	      	$('#tertiary').slideToggle('slow', function() {
+	      });
+	    });
+	   
+//Make sure the menu stays expanded when on the /portfolio page
+    if ($('body').hasClass('single-projects') || $('body').hasClass('page-portfolio') ) {
+	    $('#tertiary').show();
+	}
+
+ 
+
+
+//Make submenus fold down when you click on their parents
 	
+$('.sub-menu').hide(); //Hide children by default
+
+    $('li.parent-menu-item > a').click(function(){
+    event.preventDefault(); 
+    $(this).siblings(".sub-menu").slideToggle('slow');
+	$(".sub-menu li").addClass("current-menu-itemzzzzz");
+  
+});
+	// Show the sub-menu of the current parent
+	$('.current-menu-parent > ul.sub-menu').show();
+
+
+//Portfolio menu slider
+
+	$("#forthiary").easySlider({
+			prevText:'Back',
+			nextText:'More Projects',
+			orientation:'vertical'
+		});
 
 }); //Last
 

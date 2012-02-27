@@ -28,15 +28,26 @@
 			</nav><!-- #access -->
 
 
+		<div id="tertiary">
+			 <?php 	wp_nav_menu( array('menu' => 'Portfolio' ) ); ?>
 
+			<span id="more-projects">More Projects</span>		
+		</div>
 
-			 <?php if ( 'projects' == get_post_type() || is_page( 'portfolio' )) {
-						paginate_links(wp_nav_menu( array('menu' => 'Portfolio' )) ); 
-						echo '<span id="more-projects">More Projects</span>';
-						} 
+		<div id="forthiary">
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+				<li>7</li>
+				<li>8</li>
+				<li>9</li>
+			</ul>
+		</div>
 
-			?>
-			
 <span class="mailto"><a href="mailto:jb@jonathanbartlettstudio.com">jb@jonathanbartlettstudio.com</a></span>
 
 		</div>

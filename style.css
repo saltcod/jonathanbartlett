@@ -288,7 +288,8 @@ body.page-home #secondary {
   color: yellow;
 }
 #secondary ul.sub-menu {
-  display: none;
+  /* display: none; */
+
 }
 #secondary li.current-menu-item, #secondary li.current-menu-parent {
   font-weight: bold;
@@ -375,6 +376,34 @@ body.page-home #secondary {
   font-size: 11px;
   margin-top: 25px;
 }
+/* Easy Slider */
+#forthiary ul, #forthiary li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: #ccc;
+}
+#forthiary, #forthiary li {
+  /* 
+			define width and height of container element and list item (slide)
+			list items must be the same size as the slider area
+		*/
+  width: 196px;
+  height: 141px;
+  overflow: hidden;
+  background: lightblue;
+}
+#forthiary li {
+  background: #f1f1f1;
+}
+#forthiary li h2 {
+  margin: 0 20px;
+  padding-top: 20px;
+}
+#forthiary li p {
+  margin: 20px;
+}
+/* // Easy Slider */
 /* #menu-main  */
 #secondary #access #menu-main li.current-menu-item a, #secondary #access #menu-main li:hover > a {
   color: #888;
@@ -403,6 +432,11 @@ a.disabled {
 
   clear: both;
 }
+/* =Tertiary
+-------------------------------------------------------------- */
+#tertiary {
+  float: left;
+}
 span#more-projects {
   margin-top: 35px;
   font-weight: bold;
@@ -413,10 +447,6 @@ span#more-projects {
   padding-top: 15px;
   color: #888;
   font-size: 12px;
-}
-/* Hide the scrolling bar by default */
-.jspVerticalBar {
-  display: none;
 }
 /* =Blog / update content
 -------------------------------------------------------------- */

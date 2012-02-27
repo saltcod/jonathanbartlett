@@ -41,6 +41,11 @@ function xx_load_my_scripts() {
     wp_register_script( 'mousewheel', get_template_directory_uri() .'/js/jquery.mousewheel.js');
     wp_enqueue_script( 'mousewheel' );
 
+    wp_register_script( 'easySlider', get_template_directory_uri() .'/js/easySlider.js');
+    wp_enqueue_script( 'easySlider' );
+
+
+	
 } 
 
 add_action('wp_enqueue_scripts', 'xx_load_my_scripts');
@@ -90,7 +95,7 @@ register_post_type(
 		  'parent' => 'Parent project',
 ),) );
 
-
+ 
 
 
 if ( ! function_exists( 'toolbox_setup' ) ):
