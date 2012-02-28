@@ -256,11 +256,6 @@ body.page-home #secondary {
 				color: yellow;
 				}
 			}
-
-		 	
-		ul.sub-menu{
-		 /* display: none; */
-		}
 	
 		li.current-menu-item, li.current-menu-parent{
 			font-weight: bold;
@@ -268,21 +263,12 @@ body.page-home #secondary {
 				a {
 					color: @gold;
 				}
-				
-				ul.sub-menu{
-					display: inherit;
-					font-weight: normal;
-					margin-left: 5px;
-					font-size: 90%;
-						a {
-							color: #888;							
-						}
 
-					li.current-menu-item{
-						font-weight: normal;
-						}
+				li.current-menu-item, li.current-menu-item-sub{
+					font-weight: normal;
 					}
-				}			
+				}
+				 		
 			
  
 		#access {
@@ -293,11 +279,10 @@ body.page-home #secondary {
 			border-bottom: 1px solid #ccc;
 			padding: 15px 0;
 
-			
-
 			a{
 				color: @gold;
-				font-size: 12px;
+				font-size: 11px;
+				text-transform: uppercase;
 			}
 
 			ul {
@@ -308,18 +293,28 @@ body.page-home #secondary {
 			li {
 				float: left; 
 				position: relative;
+				border-right: 1px solid #aaa;
+				height: 13px;
+				margin-right: 4px;
+				padding-right: 5px;
+					a {
+						margin-top: -4px;
+						font-weight: bold;
+					}
 			}
 
-			li:last-child a {
+			li:last-child {
+				border-right: none;
+				a {
 				padding: 0;
 					.transition(0);
-			}
-
+					}
+			}	
+				
 			a {
 				display: block;
 				line-height: 2em;
-				padding: 0 8px;
-				text-decoration: none;
+ 				text-decoration: none;
 			}
 			
 
@@ -363,39 +358,7 @@ body.page-home #secondary {
 		}
 		
 }
-
-/* Easy Slider */
-
-	#forthiary ul, #forthiary li{
-		margin:0;
-		padding:0;
-		list-style:none;
-		background: #ccc;
-		}
-	#forthiary, #forthiary li{ 
-		/* 
-			define width and height of container element and list item (slide)
-			list items must be the same size as the slider area
-		*/ 
-		width:196px;
-		height:141px;
-		overflow:hidden; 
-		background: lightblue;
-		}
-	#forthiary li{ 
-		background:#f1f1f1;
-		}		
-	#forthiary li h2{ 
-		margin:0 20px;
-		padding-top:20px;
-		}	
-	#forthiary li p{ 
-		margin:20px;
-		}				
-	span#prevBtn{}
-	span#nextBtn{}					
-
-/* // Easy Slider */
+ 
 
 /* #menu-main  */
 
@@ -417,7 +380,7 @@ a.disabled {
 	height: 125px;
  		
 		a {
-			font-size: 14px;
+			font-size: 12px;
 		}
 }
 
@@ -447,6 +410,16 @@ a.disabled {
 
 #tertiary {
 	float: left;
+	
+		ul.sub-menu{
+			display: inherit;
+			font-weight: normal;
+			margin-left: 5px;
+			font-size: 90%;
+				a {
+					color: #888;							
+				}
+		}		
 }
 
 span#more-projects {
@@ -732,7 +705,9 @@ body.blog, body.single-format-standard {
 	right: 5px;
  	z-index: 100;
 	font-weight: bold;
-	
+		a{
+			font-size: 12px;
+		}
 		a.activeSlide{
 			color: @gold;
 			text-decoration: none;
@@ -1030,7 +1005,7 @@ article.comment {
 
 #colophon {
 	position: fixed;
-	padding: 5px 0 0;
+	padding: 2px 0 2px;
 	bottom: 0;
 	background: #888;
 	text-align: center;

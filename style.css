@@ -287,26 +287,16 @@ body.page-home #secondary {
 #secondary ul#portfolio-items li.current a {
   color: yellow;
 }
-#secondary ul.sub-menu {
-  /* display: none; */
-
-}
 #secondary li.current-menu-item, #secondary li.current-menu-parent {
   font-weight: bold;
 }
 #secondary li.current-menu-item a, #secondary li.current-menu-parent a {
   color: #a48403;
 }
-#secondary li.current-menu-item ul.sub-menu, #secondary li.current-menu-parent ul.sub-menu {
-  display: inherit;
-  font-weight: normal;
-  margin-left: 5px;
-  font-size: 90%;
-}
-#secondary li.current-menu-item ul.sub-menu a, #secondary li.current-menu-parent ul.sub-menu a {
-  color: #888;
-}
-#secondary li.current-menu-item ul.sub-menu li.current-menu-item, #secondary li.current-menu-parent ul.sub-menu li.current-menu-item {
+#secondary li.current-menu-item li.current-menu-item,
+#secondary li.current-menu-parent li.current-menu-item,
+#secondary li.current-menu-item li.current-menu-item-sub,
+#secondary li.current-menu-parent li.current-menu-item-sub {
   font-weight: normal;
 }
 #secondary #access {
@@ -319,7 +309,8 @@ body.page-home #secondary {
 }
 #secondary #access a {
   color: #a48403;
-  font-size: 12px;
+  font-size: 11px;
+  text-transform: uppercase;
 }
 #secondary #access ul {
   list-style: none;
@@ -329,6 +320,17 @@ body.page-home #secondary {
 #secondary #access li {
   float: left;
   position: relative;
+  border-right: 1px solid #aaa;
+  height: 13px;
+  margin-right: 4px;
+  padding-right: 5px;
+}
+#secondary #access li a {
+  margin-top: -4px;
+  font-weight: bold;
+}
+#secondary #access li:last-child {
+  border-right: none;
 }
 #secondary #access li:last-child a {
   padding: 0;
@@ -342,7 +344,6 @@ body.page-home #secondary {
 #secondary #access a {
   display: block;
   line-height: 2em;
-  padding: 0 8px;
   text-decoration: none;
 }
 #secondary #access ul ul {
@@ -376,34 +377,6 @@ body.page-home #secondary {
   font-size: 11px;
   margin-top: 25px;
 }
-/* Easy Slider */
-#forthiary ul, #forthiary li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  background: #ccc;
-}
-#forthiary, #forthiary li {
-  /* 
-			define width and height of container element and list item (slide)
-			list items must be the same size as the slider area
-		*/
-  width: 196px;
-  height: 141px;
-  overflow: hidden;
-  background: lightblue;
-}
-#forthiary li {
-  background: #f1f1f1;
-}
-#forthiary li h2 {
-  margin: 0 20px;
-  padding-top: 20px;
-}
-#forthiary li p {
-  margin: 20px;
-}
-/* // Easy Slider */
 /* #menu-main  */
 #secondary #access #menu-main li.current-menu-item a, #secondary #access #menu-main li:hover > a {
   color: #888;
@@ -419,7 +392,7 @@ a.disabled {
   height: 125px;
 }
 .menu-portfolio-container a {
-  font-size: 14px;
+  font-size: 12px;
 }
 #holder li {
   background-color: #F4F4F4;
@@ -436,6 +409,15 @@ a.disabled {
 -------------------------------------------------------------- */
 #tertiary {
   float: left;
+}
+#tertiary ul.sub-menu {
+  display: inherit;
+  font-weight: normal;
+  margin-left: 5px;
+  font-size: 90%;
+}
+#tertiary ul.sub-menu a {
+  color: #888;
 }
 span#more-projects {
   margin-top: 35px;
@@ -673,6 +655,9 @@ body.blog .entry-content, body.single-format-standard .entry-content {
   right: 5px;
   z-index: 100;
   font-weight: bold;
+}
+.pager a {
+  font-size: 12px;
 }
 .pager a.activeSlide {
   color: #a48403;
@@ -918,7 +903,7 @@ article.comment {
 -------------------------------------------------------------- */
 #colophon {
   position: fixed;
-  padding: 5px 0 0;
+  padding: 2px 0 2px;
   bottom: 0;
   background: #888;
   text-align: center;

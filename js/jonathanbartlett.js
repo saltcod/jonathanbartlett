@@ -8,6 +8,10 @@ jQuery(function($){
 		$.backstretch(images[random_image_filename]);  
 	}
 
+	//Set the height of the sidebar == to the window height
+		$('#secondary').css({ 'height':(( $(window).height())) });
+	
+	
 	
 	//Wrap the illustration titles in quotes
 	$('p.slideshow-title').prepend('"');
@@ -29,7 +33,7 @@ jQuery(function($){
 
 	    $('#tertiary').hide();
 
-	      $('#menu-item-56').click(function() {
+	      $('#menu-item-758, #menu-item-56').click(function() {
 			event.preventDefault();
 	      	$('#tertiary').slideToggle('slow', function() {
 	      });
@@ -42,7 +46,6 @@ jQuery(function($){
 
  
 
-
 //Make submenus fold down when you click on their parents
 	
 $('.sub-menu').hide(); //Hide children by default
@@ -50,20 +53,16 @@ $('.sub-menu').hide(); //Hide children by default
     $('li.parent-menu-item > a').click(function(){
     event.preventDefault(); 
     $(this).siblings(".sub-menu").slideToggle('slow');
-	$(".sub-menu li").addClass("current-menu-itemzzzzz");
+	$(".sub-menu li").addClass("current-menu-item-sub");
   
 });
 	// Show the sub-menu of the current parent
 	$('.current-menu-parent > ul.sub-menu').show();
 
-
-//Portfolio menu slider
-
-	$("#forthiary").easySlider({
-			prevText:'Back',
-			nextText:'More Projects',
-			orientation:'vertical'
-		});
+ //Apply .current-menu-item to Portfolio when on a project page
+ if( $('body').hasClass('single-projects') ){
+		$('#menu-item-758, #menu-item-56').addClass('current-menu-item');
+}
 
 }); //Last
 
