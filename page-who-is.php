@@ -18,7 +18,7 @@ get_sidebar(); ?>
 	<div id="primary" class="group eightcol last">
 
 				<div class="hello">
-					<h2>Hello and welcome,</h2>
+ 					<img src="<?php echo get_template_directory_uri();?>/images/hello-welcome.png" alt="Hello and Welcome"> 
 				</div>
 
 
@@ -98,7 +98,7 @@ get_sidebar(); ?>
 
 					<div class="things-i-love who-is">
 							<h4>THINGS I LOVE:</h4>
-							<p>The woods, humor, hard work, bow ties, lteather shoes, rap music, rock and roll, ice Hockey, Marty McFly, Claude Monet, and China.	</p>
+							<p>The woods, humor, hard work, bow ties, leather shoes, rap music, rock and roll, ice Hockey, Marty McFly, Claude Monet, and China.	</p>
 						</div>
 
 
