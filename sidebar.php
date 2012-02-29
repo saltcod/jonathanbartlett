@@ -30,7 +30,6 @@
 
 		<div id="tertiary">
 			 <?php 	wp_nav_menu( array('menu' => 'Portfolio' ) ); ?>
-<a class="prev">prev</a> | <a class="next">next</a>
  		</div>
  
 		  
