@@ -64,4 +64,5 @@ $('.sub-menu').hide(); //Hide children by default
 		$('#menu-item-758, #menu-item-56').addClass('current-menu-item');
 }
 
+
 }); //Last
