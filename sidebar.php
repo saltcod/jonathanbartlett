@@ -30,10 +30,9 @@
 
 		<div id="tertiary">
 			 <?php 	wp_nav_menu( array('menu' => 'Portfolio' ) ); ?>
-
-			<span id="more-projects">More Projects</span>		
-		</div>
-
+<a class="prev">prev</a> | <a class="next">next</a>
+ 		</div>
+ 
 		  
 
 <span class="mailto"><a href="mailto:jb@jonathanbartlettstudio.com">jb@jonathanbartlettstudio.com</a></span>

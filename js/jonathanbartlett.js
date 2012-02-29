@@ -10,13 +10,13 @@ jQuery(function($){
 
 	//Set the height of the sidebar == to the window height
 		$('#secondary').css({ 'height':(( $(window).height())) });
-	
-	
-	
+
+
+
 	//Wrap the illustration titles in quotes
 	$('p.slideshow-title').prepend('"');
 	$('p.slideshow-title').append('"');
-	
+
 
 //Call jQuery Masonry on the Who Is page
 	var $container = $('body.page-who-is #primary #content');
@@ -38,7 +38,7 @@ jQuery(function($){
 	      	$('#tertiary').slideToggle(400, function() {
 	      });
 	    });
-	   
+
 //Make sure the menu stays expanded when on the /portfolio page
     if ($('body').hasClass('single-projects') || $('body').hasClass('page-portfolio') ) {
 	    $('#tertiary').show();
@@ -47,7 +47,7 @@ jQuery(function($){
  
 
 //Make submenus fold down when you click on their parents
-	
+
 $('.sub-menu').hide(); //Hide children by default
 
     $('li.parent-menu-item > a').click(function(){
@@ -65,4 +65,3 @@ $('.sub-menu').hide(); //Hide children by default
 }
 
 }); //Last
-
