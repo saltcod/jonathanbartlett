@@ -11,7 +11,7 @@
 			<header id="branding" class="group" role="banner">
 					<hgroup>
 						 
-						<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"> <img src="<?php echo get_template_directory_uri();?>/images/logo.png" alt="logo"></a></h1>
+						<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"> <img src="<?php echo get_template_directory_uri();?>/images/logozzzzzzzzz.png" alt="logo"></a></h1>
 						<!-- <h2 id="site-description"><?php bloginfo( 'description' ); ?>  -->
 					</hgroup>
 				</header><!-- #branding -->
@@ -30,6 +30,10 @@
 
 		<div id="tertiary">
 			 <?php 	wp_nav_menu( array('menu' => 'Portfolio' ) ); ?>
+
+			<div class="sidebar-nav"><a class="prev">Back</a> | <a class="next">More Projects</a></div>
+
+
  		</div>
  
 		  

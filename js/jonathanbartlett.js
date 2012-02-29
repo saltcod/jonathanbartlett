@@ -57,12 +57,28 @@ $('.sub-menu').hide(); //Hide children by default
   
 });
 	// Show the sub-menu of the current parent
-	$('.current-menu-parent > ul.sub-menu').show();
+	$('.current-menu-parent > ul.sub-menu').show(200);
 
  //Apply .current-menu-item to Portfolio when on a project page
  if( $('body').hasClass('single-projects') ){
 		$('#menu-item-758, #menu-item-56').addClass('current-menu-item');
 }
 
+
+// Paginate the portfolio
+
+$('ul#menu-portfolio > li:gt(3)').hide();
+
+$('.prev').click(function() {
+    var first = $('ul#menu-portfolio').children('li:visible:first');
+    first.prevAll(':lt(5)').show();
+    first.prev().nextAll().hide();
+});
+
+$('.next').click(function() {
+    var last = $('ul#menu-portfolio').children('li:visible:last');
+    last.nextAll(':lt(5)').show();
+    last.next().prevAll().hide();
+});
 
 }); //Last

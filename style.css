@@ -501,6 +501,12 @@ span#more-projects {
   color: #888;
   font-size: 12px;
 }
+.sidebar-nav {
+  margin-top: 95px;
+}
+.sidebar-nav a {
+  cursor: pointer;
+}
 /* Hide the scrolling bar by default */
 .jspVerticalBar {
   display: none;
