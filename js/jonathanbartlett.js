@@ -35,7 +35,7 @@ jQuery(function($){
 
 	      $('#menu-item-758, #menu-item-56').click(function() {
 			event.preventDefault();
-	      	$('#tertiary').slideToggle('slow', function() {
+	      	$('#tertiary').slideToggle(400, function() {
 	      });
 	    });
 	   
@@ -52,7 +52,7 @@ $('.sub-menu').hide(); //Hide children by default
 
     $('li.parent-menu-item > a').click(function(){
     event.preventDefault(); 
-    $(this).siblings(".sub-menu").slideToggle('slow');
+    $(this).siblings(".sub-menu").slideToggle(400);
 	$(".sub-menu li").addClass("current-menu-item-sub");
   
 });
