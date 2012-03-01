@@ -287,9 +287,6 @@ body.page-home #secondary {
 #secondary ul#portfolio-items li.current a {
   color: yellow;
 }
-#secondary li.current-menu-item, #secondary li.current-menu-parent {
-  font-weight: bold;
-}
 #secondary li.current-menu-item a, #secondary li.current-menu-parent a {
   color: #a48403;
 }
@@ -309,7 +306,7 @@ body.page-home #secondary {
 }
 #secondary #access a {
   color: #a48403;
-  font-size: 11px;
+  font-size: 12px;
   text-transform: uppercase;
 }
 #secondary #access ul {
@@ -327,7 +324,6 @@ body.page-home #secondary {
 }
 #secondary #access li a {
   margin-top: -4px;
-  font-weight: bold;
 }
 #secondary #access li:last-child {
   border-right: none;
@@ -620,6 +616,7 @@ body.blog .entry-content, body.single-format-standard .entry-content {
   position: relative;
 }
 .slideshow-meta {
+  font-size: 12px;
   margin-top: -7px;
   background: white;
   overflow: hidden;
@@ -629,7 +626,6 @@ body.blog .entry-content, body.single-format-standard .entry-content {
   padding: 0 15px;
   float: left;
   display: inline;
-  font-weight: bold;
 }
 .slideshow-meta p.slideshow-caption {
   padding: 0 5px;
@@ -658,10 +654,9 @@ body.blog .entry-content, body.single-format-standard .entry-content {
   bottom: 25px;
   right: 5px;
   z-index: 100;
-  font-weight: bold;
 }
 .pager a {
-  font-size: 12px;
+  font-size: 13px;
 }
 .pager a.activeSlide {
   color: #a48403;
