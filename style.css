@@ -437,8 +437,7 @@ body.blog article, body.single-format-standard article {
   border-bottom: 1px solid #ccc;
 }
 body.blog article.post h1.entry-title, body.single-format-standard article.post h1.entry-title {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 22px;
   text-transform: uppercase;
   margin-bottom: 0px;
 }
@@ -518,8 +517,6 @@ body.blog article, body.single-format-standard article {
   border-bottom: 1px solid #ccc;
 }
 body.blog article.post h1.entry-title, body.single-format-standard article.post h1.entry-title {
-  font-size: 18px;
-  font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 0px;
 }
@@ -680,7 +677,7 @@ body.page-who-is #content {
 .who-is h4 {
   text-transform: uppercase;
   font-style: italic;
-  font-weight: bold;
+  font-size: 16px;
 }
 .hello {
   width: 615px;
