@@ -52,7 +52,7 @@ $('.sub-menu').hide(); //Hide children by default
 
     $('li.parent-menu-item > a').click(function(){
     event.preventDefault(); 
-    $(this).siblings(".sub-menu").slideToggle(400);
+    $(this).siblings(".sub-menu").slideToggle(200);
 	$(".sub-menu li").addClass("current-menu-item-sub");
   
 });
@@ -71,13 +71,13 @@ $('ul#menu-portfolio > li:gt(3)').hide();
 
 $('.prev').click(function() {
     var first = $('ul#menu-portfolio').children('li:visible:first');
-    first.prevAll(':lt(5)').show();
+    first.prevAll(':lt(5)').show('fast');
     first.prev().nextAll().hide();
 });
 
 $('.next').click(function() {
     var last = $('ul#menu-portfolio').children('li:visible:last');
-    last.nextAll(':lt(5)').show();
+    last.nextAll(':lt(5)').show('fast');
     last.next().prevAll().hide();
 });
 
