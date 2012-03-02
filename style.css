@@ -968,6 +968,11 @@ px      68    160    252    */
   #colophon {
     position: relative;
   }
+  #secondary {
+    max-width: 300px;
+    min-width: 300px;
+    margin: 0 auto;
+  }
 }
 /*		iPhone wide Layout: 480px.  */
 @media only screen and (min-width: 480px) and (max-width: 767px) {

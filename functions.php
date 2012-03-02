@@ -71,6 +71,7 @@ register_post_type(
 		'label' => 'Projects',
 		'description' => '',
 		'public' => true,
+		'menu_icon' => get_bloginfo('template_directory') . '/images/projects-icon.png',
 		'show_ui' => true,
 		'show_in_menu' => true,
 		'capability_type' => 'post',
