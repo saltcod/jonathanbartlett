@@ -176,7 +176,7 @@ table {
 -------------------------------------------------------------- */
 body {
   font: 14px/26px "ff-basic-gothic-web-pro", "Helvetica Neue", Helvetica, serif;
-  background: #f3f3f3;
+  background: #eee;
   color: #616161;
 }
 #page {
@@ -218,6 +218,7 @@ strong {
 }
 p {
   margin: 0 0 1em;
+  line-height: 1.6em;
 }
 h1,
 h2,
@@ -275,7 +276,8 @@ body.page-home #secondary {
   background: rgba(233, 232, 232, 0.9);
 }
 #secondary {
-  background: #f3f3f3;
+  font-size: 12px;
+  background: #eee;
   padding: 100px 0 0 15px;
   max-width: 220px;
   min-width: 220px;
@@ -382,6 +384,9 @@ a.disabled {
   text-decoration: none;
   color: black;
   cursor: default;
+}
+ul#menu-portfolio li {
+  margin: -3px 0;
 }
 .menu-portfolio-container {
   clear: both;
