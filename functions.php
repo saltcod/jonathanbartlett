@@ -44,8 +44,6 @@ function xx_load_my_scripts() {
     wp_register_script( 'easySlider', get_template_directory_uri() .'/js/easySlider.js');
     wp_enqueue_script( 'easySlider' );
 
-
-	
 } 
 
 add_action('wp_enqueue_scripts', 'xx_load_my_scripts');

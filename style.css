@@ -391,7 +391,6 @@ ul#menu-portfolio li {
 }
 .menu-portfolio-container {
   clear: both;
-  height: 125px;
 }
 .menu-portfolio-container a {
   font-size: 12px;
@@ -420,6 +419,9 @@ ul#menu-portfolio li {
 }
 #tertiary ul.sub-menu a {
   color: #888;
+}
+#tertiary ul.sub-menu li.current-menu-item a {
+  color: #a48403;
 }
 span#more-projects {
   margin-top: 35px;
@@ -503,7 +505,7 @@ span#more-projects {
   font-size: 12px;
 }
 .sidebar-nav {
-  margin-top: 95px;
+  margin-top: 15px;
 }
 .sidebar-nav a {
   cursor: pointer;
