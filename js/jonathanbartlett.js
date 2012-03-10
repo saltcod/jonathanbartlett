@@ -11,6 +11,13 @@ jQuery(function($){
 	//Set the height of the sidebar == to the window height
 		$('#secondary').css({ 'height':(( $(window).height())) });
 
+	// do the same thing again when the window is resized
+		$(window).resize(function(){
+			$('#secondary').css({ 'height':(( $(window).height())) });
+			console.log('resizing');
+		});
+		
+
 
 
 	//Wrap the illustration titles in quotes
@@ -50,8 +57,8 @@ jQuery(function($){
 
 $('.sub-menu').hide(); //Hide children by default
 
-    $('li.parent-menu-item > a').click(function(){
-    event.preventDefault(); 
+    $('li.parent-menu-item > a').click(function(e){
+    e.preventDefault(); 
     $(this).siblings(".sub-menu").slideToggle(200);
 	$(".sub-menu li").addClass("current-menu-item-sub");
   
@@ -67,17 +74,17 @@ $('.sub-menu').hide(); //Hide children by default
 
 // Paginate the portfolio
 
-$('ul#menu-portfolio > li:gt(3)').hide();
+$('ul#menu-portfolio > li:gt(11)').hide();
 
 $('.prev').click(function() {
     var first = $('ul#menu-portfolio').children('li:visible:first');
-    first.prevAll(':lt(5)').show('fast');
+    first.prevAll(':lt(12)').show('fast');
     first.prev().nextAll().hide();
 });
 
 $('.next').click(function() {
     var last = $('ul#menu-portfolio').children('li:visible:last');
-    last.nextAll(':lt(5)').show('fast');
+    last.nextAll(':lt(12)').show('fast');
     last.next().prevAll().hide();
 });
 
