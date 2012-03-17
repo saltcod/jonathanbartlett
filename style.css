@@ -628,7 +628,7 @@ body.blog .entry-content, body.single-format-standard .entry-content {
 }
 .slideshow-meta p.slideshow-title {
   color: #a48403;
-  padding: 0 15px;
+  padding: 0;
   float: left;
   display: inline;
 }
@@ -642,7 +642,7 @@ body.blog .entry-content, body.single-format-standard .entry-content {
   clear: both;
 }
 .slideshow-meta .slideshow-description p {
-  padding: 0 15px 5px;
+  padding: 0;
   font-size: 12px;
   overflow: hidden;
   margin: 0!important;
@@ -654,10 +654,13 @@ body.blog .entry-content, body.single-format-standard .entry-content {
   text-decoration: underline;
   color: #a48403;
 }
+.slideshow-wrapper .numbers a:last-child {
+  margin: 0;
+}
 .pager {
   position: absolute;
   bottom: 25px;
-  right: 5px;
+  right: 0;
   z-index: 100;
 }
 .pager a {
@@ -706,6 +709,9 @@ body.page-who-is #content {
 }
 .twentyfour-hours a {
   color: #a48403;
+}
+.clients li, .recognitions li {
+  margin-bottom: -6px;
 }
 .sincerely {
   font: 35px Archer;

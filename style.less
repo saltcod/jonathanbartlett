@@ -675,7 +675,7 @@ border-top: 1px solid #ccc;
  	
  	p.slideshow-title{
 		color: @gold;
-		padding: 0 15px;
+		padding: 0;
 		float: left;
 		display: inline;
  		}
@@ -691,7 +691,7 @@ border-top: 1px solid #ccc;
  		clear: both;	
 	}
 	.slideshow-description p{
-		padding: 0 15px 5px;
+		padding: 0;
 		font-size: 12px;
 		overflow:hidden;
  		margin: 0!important;	
@@ -708,10 +708,13 @@ border-top: 1px solid #ccc;
 	text-decoration: underline;
 	color: @gold;
 }
+.slideshow-wrapper .numbers a:last-child {
+	margin: 0;
+}
 .pager {
  	position: absolute;
 	bottom: 25px;
-	right: 5px;
+	right: 0;
  	z-index: 100;
  		a{
 			font-size: 13px;
@@ -778,7 +781,9 @@ body.page-who-is #content {
 
 .recognitions {}
 
-.clients {}
+.clients li, .recognitions li{
+	margin-bottom: -6px;
+}
 
 .things-i-love {}
 
