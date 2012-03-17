@@ -70,22 +70,89 @@ $('.sub-menu').hide(); //Hide children by default
  if( $('body').hasClass('single-projects') ){
 		$('#menu-item-758, #menu-item-56').addClass('current-menu-item');
 }
+ 
+ 
 
-
-// Paginate the portfolio
-
-$('ul#menu-portfolio > li:gt(11)').hide();
-
-$('.prev').click(function() {
-    var first = $('ul#menu-portfolio').children('li:visible:first');
-    first.prevAll(':lt(12)').show('fast');
-    first.prev().nextAll().hide();
-});
-
-$('.next').click(function() {
-    var last = $('ul#menu-portfolio').children('li:visible:last');
-    last.nextAll(':lt(12)').show('fast');
-    last.next().prevAll().hide();
-});
-
+ 
+// Paginate the portfolio    
+    $.fn.menuPaginate = function (numitems) {
+        return this.each(function () {
+            var $items = $('ul > li', this).not('ul ul li'), 
+                mod = 12, max = $items.length,
+                hash, range, 
+                $prev = $('.prev', this),
+                $next = $('.next', this);
+            
+            // Mod needs to be set before defining the function showRange
+            if(typeof numitems != 'undefined' && parseInt(numitems)) {
+                mod = parseInt(numitems);
+            }
+            
+            // Function to normalize given range and hide/show accordingly
+            var showRange = function (range) {
+                console.log(range, mod);
+                // minimums
+                range[0] = range[0] > 0 ? range[0] : 0;
+                range[1] = range[1] > range[0] ? range[1] : range[0] + mod;
+                
+                $items.hide();
+                $items.slice(range[0], range[1]).show();
+                
+                // Show/hide prev control
+                if(range[0] == 0) {
+                    $prev.hide();
+                } else {
+                    $prev.show();
+                }
+                
+                // Show/hide next control
+                if(range[1] >= max) {
+                    $next.hide();
+                } else {
+                    $next.show();
+                }
+                
+                // Set current hash to reflect menu setting
+                window.location.hash = 'projects/' + (range[0]+1) + '-' + (range[1] > max ? max : range[1]);
+                
+                console.log(window.location);
+            };
+            
+            var parseHash = function () {
+                var hash  = window.location.hash.split('/'),
+                    range = hash[1].split('-');
+                
+                range = [parseInt(range[0]-1), parseInt(range[1])]; // 0 indexed, taking into account slicing....
+                range[0] = range[0] < 0 ? 0 : range[0];
+                range[1] = range[1] >= max ? range[0]+mod : range[1];
+                
+                return range;
+            };
+            
+            // Check if hash exists and adjust range accordingly
+            if(window.location.hash) {
+                range = parseHash();
+            } else {
+                range = [0, mod];
+            }
+            
+            showRange(range);
+            
+            $prev.click(function (e) {
+                e.preventDefault();
+                
+                range = parseHash();
+                showRange([range[0]-mod, range[1]-mod]);
+            });
+            
+            $next.click(function(e) { 
+                e.preventDefault();
+                
+                range = parseHash();
+                showRange([range[0]+mod, range[1]+mod]);
+            });
+        });
+    };
+    
+    $('#menu-portfolio-container').menuPaginate(12);
 }); //Last
