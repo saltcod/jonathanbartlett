@@ -13,11 +13,11 @@ jQuery(function($){
 	// TODO: This snippet of code is causing havoc on the page in chrome if the 
 	// body size is too large for the window (window resize keeps firing)
 	// Set the height of the sidebar == to the window height
-	$('#secondary').height($(window).height()); });
+	$('#secondary').height($(window).height()));
 
 	// do the same thing again when the window is resized
 	$(window).resize(function(){
-		$('#secondary').height($(window).height()); });
+		$('#secondary').height($(window).height()));
 		console.log('resizing');
 	});
 	// End TODO
@@ -48,9 +48,7 @@ jQuery(function($){
 	});
 
 	//Make sure the menu stays expanded when on the /portfolio page
-	if ($('body').hasClass('single-projects') || $('body').hasClass('page-portfolio') ) {
-		// $('#tertiary').show(); // Do nothing, already visible!
-	} else {
+	if (!$('body').hasClass('single-projects') && !$('body').hasClass('page-portfolio') ) {
 		$('#tertiary').hide();
 	}
 
