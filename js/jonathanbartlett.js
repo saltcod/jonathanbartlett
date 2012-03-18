@@ -74,10 +74,10 @@ $('.sub-menu').hide(); //Hide children by default
  
 
  
-// Paginate the portfolio    
-    $.fn.menuPaginate = function (numitems) {
+    // Paginate the portfolio    
+    $.fn.menuPaginate = function (numitems, menuid) {
         return this.each(function () {
-            var $items = $('ul > li', this).not('ul ul li'), 
+            var $items = $('ul#'+menuid+' > li', this), 
                 mod = 12, max = $items.length,
                 hash, range, 
                 $prev = $('.prev', this),
@@ -90,13 +90,12 @@ $('.sub-menu').hide(); //Hide children by default
             
             // Function to normalize given range and hide/show accordingly
             var showRange = function (range) {
-                console.log(range, mod);
                 // minimums
                 range[0] = range[0] > 0 ? range[0] : 0;
                 range[1] = range[1] > range[0] ? range[1] : range[0] + mod;
                 
                 $items.hide();
-                $items.slice(range[0], range[1]).show();
+                $items.slice(range[0], range[1]).show('fast');
                 
                 // Show/hide prev control
                 if(range[0] == 0) {
@@ -114,8 +113,6 @@ $('.sub-menu').hide(); //Hide children by default
                 
                 // Set current hash to reflect menu setting
                 window.location.hash = 'projects/' + (range[0]+1) + '-' + (range[1] > max ? max : range[1]);
-                
-                console.log(window.location);
             };
             
             var parseHash = function () {
@@ -154,5 +151,10 @@ $('.sub-menu').hide(); //Hide children by default
         });
     };
     
-    $('#menu-portfolio-container').menuPaginate(12);
+    // We call this function on the container because it will be used 
+    // as context to find the menu, its items, and the page controls.
+    // The ID for the menu is specified to get selector together which 
+    // makes sense and is efficient.
+    $('.menu-portfolio-container').menuPaginate(12, 'menu-portfolio');
+    
 }); //Last
