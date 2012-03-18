@@ -1,21 +1,26 @@
 jQuery(function($){
+	// Keep it simple,ekeep the domain here
+	var domain = "http://jb.waterstreetgm.org";
 
  	// Backstretch
-	var images=["http://jb.waterstreetgm.org/wp-content/themes/jonathanbartlett/images/bg_1.jpg", "http://jb.waterstreetgm.org/wp-content/themes/jonathanbartlett/images/bg_2.jpg", "http://jb.waterstreetgm.org/wp-content/themes/jonathanbartlett/images/bg_3.jpg"];
+	var images=[domain+"/wp-content/themes/jonathanbartlett/images/bg_1.jpg", domain+"/wp-content/themes/jonathanbartlett/images/bg_2.jpg", domain+"/wp-content/themes/jonathanbartlett/images/bg_3.jpg"];
 	var random_image_filename = Math.floor(images.length * Math.random());
 
 	if($('body').hasClass('home')){
 		$.backstretch(images[random_image_filename]);  
 	}
 
-	//Set the height of the sidebar == to the window height
-		$('#secondary').css({ 'height':(( $(window).height())) });
+	// TODO: This snippet of code is causing havoc on the page in chrome if the 
+	// body size is too large for the window (window resize keeps firing)
+	// Set the height of the sidebar == to the window height
+	$('#secondary').height($(window).height()); });
 
 	// do the same thing again when the window is resized
-		$(window).resize(function(){
-			$('#secondary').css({ 'height':(( $(window).height())) });
-			console.log('resizing');
-		});
+	$(window).resize(function(){
+		$('#secondary').height($(window).height()); });
+		console.log('resizing');
+	});
+	// End TODO
 		
 
 
@@ -36,19 +41,17 @@ jQuery(function($){
 	});
 
 
- //Show 12 links at a time in the portfolio menu
+	//Show 12 links at a time in the portfolio menu
+	$('#menu-item-758, #menu-item-56').click(function(e) { // need to accept the argument here
+		e.preventDefault(); // to be able to use it here (firefox was still letting you go to the link)
+		$('#tertiary').slideToggle(); // 400 is the default duration so you don'e need to supply it
+	});
 
-	    $('#tertiary').hide();
-
-	      $('#menu-item-758, #menu-item-56').click(function() {
-			event.preventDefault();
-	      	$('#tertiary').slideToggle(400, function() {
-	      });
-	    });
-
-//Make sure the menu stays expanded when on the /portfolio page
-    if ($('body').hasClass('single-projects') || $('body').hasClass('page-portfolio') ) {
-	    $('#tertiary').show();
+	//Make sure the menu stays expanded when on the /portfolio page
+	if ($('body').hasClass('single-projects') || $('body').hasClass('page-portfolio') ) {
+		// $('#tertiary').show(); // Do nothing, already visible!
+	} else {
+		$('#tertiary').hide();
 	}
 
  
@@ -156,5 +159,10 @@ $('.sub-menu').hide(); //Hide children by default
     // The ID for the menu is specified to get selector together which 
     // makes sense and is efficient.
     $('#tertiary').menuPaginate(12, 'menu-portfolio');
+    // Make sure links from the same domain receive the current hash behind their url when you click on them
+    $('a[href^="'+domain+'"]').click(function () { 
+	var $this = $(this); 
+	$this.attr('href', $this.attr('href') + window.location.hash); 
+    });
     
 }); //Last
