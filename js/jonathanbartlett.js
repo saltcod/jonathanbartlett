@@ -155,6 +155,6 @@ $('.sub-menu').hide(); //Hide children by default
     // as context to find the menu, its items, and the page controls.
     // The ID for the menu is specified to get selector together which 
     // makes sense and is efficient.
-    $('.menu-portfolio-container').menuPaginate(12, 'menu-portfolio');
+    $('#tertiary').menuPaginate(12, 'menu-portfolio');
     
 }); //Last
