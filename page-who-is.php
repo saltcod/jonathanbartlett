@@ -69,6 +69,7 @@ get_sidebar(); ?>
 				<div class="clients who-is">
 					<h4>PARTIAL CLIENT LIST:</h4>
 					<ul>
+						<li>The New Yorker</li>
 						<li>New York Times</li>
 						<li>Los Angeles Times</li>
 						<li>Plansponsor Magazine</li>
