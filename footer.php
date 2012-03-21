@@ -14,7 +14,7 @@
 </div><!-- #page -->
 
 	<footer id="colophon" class="twelvecol  " role="contentinfo">
- 		Jonathan Bartlett <span class="sep"> &nbsp;</span><a href="mailto:jb@seejbdraw.com">jb@seejbdraw.com</a>  <span class="sep">|</span>  336.345.0369   <span class="sep">|</span>   All content copyright Jonathan Bartlett, 2011 	
+ 		Jonathan Bartlett <span class="sep"> &nbsp;</span><a href="mailto:jb@bartlettstudio.com">jb@bartlettstudio.com</a>  <span class="sep">|</span>  336.345.0369   <span class="sep">|</span>   All content copyright Jonathan Bartlett, 2011 	
 	</footer><!-- #colophon -->
 
 <?php wp_footer(); ?>
