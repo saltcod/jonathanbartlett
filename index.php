@@ -18,8 +18,13 @@ get_sidebar(); ?>
 
 
 		<div id="primary" class="group sevencol last">
-			<div id="content" role="main" class="group">
+				<img class="blog-header" src="<?php echo get_template_directory_uri();?>/images/blog-header.png" alt="logo">			
+				
+				<div id="content" role="main" class="group">
+
+
 			<?php if ( have_posts() ) : ?>
+
 
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>

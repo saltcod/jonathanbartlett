@@ -33,8 +33,8 @@ get_sidebar(); ?>
 			<div class="bio who-is">
 					<p>Jonathan grew up in a small Pennsylvania town outside of Harrisburg and currently lives and works in Brooklyn, NY. He has done work for a wide variety of clients in various markets, receiving awards and recognitions from American Illustration, The Society of Illustrators, Spectrum Fantasy Art, 3x3 Magazine, and The Art Directors Club. He has an MFA from the School of Visual Arts, Illustration as Visual Essay program. </p>
 					<p>Jonathan was recently named a winner in the Art Directors Club Young Guns 2011 competition and was awarded a silver medal by the Society of Illustrators for his poster work with The Bridge Theatre Company.</p>
-					<p>If you are interested in more (mostly) useless knowledge about Jonathan, look here and here.</p>
-					<p>For a more extensive catalog of work take a look here.</p>
+					<p>If you are interested in more (mostly) useless knowledge about Jonathan, look <a href=" http://www.mymodernmet.com/profiles/blogs/fighting-our-inner-demons-15">here</a> and <a href="http://nonslick.blogspot.com/2011/01/jonathan-bartlett.html">here</a>.</p>
+					<p>For a more extensive catalog of work take a look <a href="http://illoz.com/jonathanbartlett">here</a>.</p>
 				</div>
 
 

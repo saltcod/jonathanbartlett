@@ -211,6 +211,9 @@ a {
   -moz-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
+p a {
+  text-decoration: underline;
+}
 em {
   font-style: italic;
 }
@@ -438,6 +441,9 @@ span#more-projects {
 -------------------------------------------------------------- */
 body.blog #primary, body.single-format-standard #primary {
   margin: 45px 0;
+}
+body.blog img.blog-header, body.single-format-standard img.blog-header {
+  margin-bottom: 45px;
 }
 body.blog article, body.single-format-standard article {
   margin: 0 0 55px 0;
