@@ -1,6 +1,6 @@
 jQuery(function($){
 	// Keep it simple,ekeep the domain here
-	var domain = "http://jb.waterstreetgm.org";
+	var domain = "http://bartlettstudio.com";
 
  	// Backstretch
 	var images=[domain+"/wp-content/themes/jonathanbartlett/images/bg_1.jpg", domain+"/wp-content/themes/jonathanbartlett/images/bg_2.jpg", domain+"/wp-content/themes/jonathanbartlett/images/bg_3.jpg"];
