@@ -24,27 +24,12 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
-<title><?php
-	/*
-	 * Print the <title> tag based on what is being viewed.
-	 */
-	global $page, $paged;
+<title>Jonathan Bartlett</title>
 
-	wp_title( '|', true, 'right' );
+<meta name="keywords" content="Illustrartion, Design, Graphic Design, Photoshop, New York, NYC, Brooklyn, Creative, Book Jackets, Studio, Graphics, DIY, Portfolio, JB, Jonathan, Bartlett, Art, Editorial, advertising, traditional,  Print, Identity" />
 
-	// Add the blog name.
-	bloginfo( 'name' );
+<meta name="description" content="Brooklyn based illustrator contributing to a wide range of magazines, book publishers, and advertising clients" />
 
-	// Add the blog description for the home/front page.
-	$site_description = get_bloginfo( 'description', 'display' );
-	if ( $site_description && ( is_home() || is_front_page() ) )
-		echo " | $site_description";
-
-	// Add a page number if necessary:
-	if ( $paged >= 2 || $page >= 2 )
-		echo ' | ' . sprintf( __( 'Page %s', 'toolbox' ), max( $paged, $page ) );
-
-	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 
 

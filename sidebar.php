@@ -38,6 +38,6 @@
  
 		  
 
-<span class="mailto"><a href="mailto:jb@bartlettstudio.com">jb@jonathanbartlettstudio.com</a></span>
+<span class="mailto"><a href="mailto:jb@bartlettstudio.com">jb@bartlettstudio.com</a></span>
 
 		</div>

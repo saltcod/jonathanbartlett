@@ -43,7 +43,7 @@ get_sidebar(); ?>
 				<div class="twentyfour-hours who-is">
 					<p>24 HR SERVICE</p>
 					<strong><em>JONATHAN BARTLETT</em></strong> <br />
-					<a href="mailto:jb@bartlettstudio.com">jb@bartlettstudio.com</a>
+					<a href="mailto:jb@bartlettstudio.com">jb@bartlettstudio.com</a> <br />
 					336.345.0369<br />
 					Follow me on <a href="http://twitter.com/#">Twitter</a><br />
 					Find me on <a href="#">Illoz</a><br />
