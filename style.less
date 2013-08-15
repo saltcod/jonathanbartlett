@@ -20,9 +20,9 @@ Yellow Selection: rgb(255,255,158);
 @gold: #a48403;
 
 * {
- -moz-box-sizing: border-box;
- -webkit-box-sizing: border-box;
- box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 } 
 
 /* =Eric Meyer's CSS Resets
@@ -30,65 +30,65 @@ Yellow Selection: rgb(255,255,158);
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
-*/
+   */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-	width: 80%;
-	margin: 0 auto;
-	color: @blue;
-	border-bottom: 1px solid;
-	margin-bottom: 25px;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-
-
-@import "elements.less";
+   html, body, div, span, applet, object, iframe,
+   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+   a, abbr, acronym, address, big, cite, code,
+   del, dfn, em, img, ins, kbd, q, s, samp,
+   small, strike, strong, sub, sup, tt, var,
+   b, u, i, center,
+   dl, dt, dd, ol, ul, li,
+   fieldset, form, label, legend,
+   table, caption, tbody, tfoot, thead, tr, th, td,
+   article, aside, canvas, details, embed, 
+   figure, figcaption, footer, header, hgroup, 
+   menu, nav, output, ruby, section, summary,
+   time, mark, audio, video {
+   	margin: 0;
+   	padding: 0;
+   	border: 0;
+   	font-size: 100%;
+   	font: inherit;
+   	vertical-align: baseline;
+   }
+   /* HTML5 display-role reset for older browsers */
+   article, aside, details, figcaption, figure, 
+   footer, header, hgroup, menu, nav, section {
+   	display: block;
+   }
+   body {
+   	line-height: 1;
+   }
+   ol, ul {
+   	list-style: none;
+   }
+   blockquote, q {
+   	quotes: none;
+   	width: 80%;
+   	margin: 0 auto;
+   	color: @blue;
+   	border-bottom: 1px solid;
+   	margin-bottom: 25px;
+   }
+   blockquote:before, blockquote:after,
+   q:before, q:after {
+   	content: '';
+   	content: none;
+   }
+   table {
+   	border-collapse: collapse;
+   	border-spacing: 0;
+   }
 
 
-/* Colour Variables */
-@blue: #5B83AD;
-@light-blue: @blue + #111;
+
+   @import "elements.less";
+
+
+   /* Colour Variables */
+   @blue: #5B83AD;
+   @light-blue: @blue + #111;
 
 
 
@@ -100,23 +100,23 @@ table {
 -------------------------------------------------------------- */
 body{
 	font: 12px/26px "ff-basic-gothic-web-pro","Helvetica Neue", Helvetica, serif;
-  background: #eee;
+	background: #eee;
 	color: #616161;
-  }
+}
 
 
 
 #page {
 	display: block;
 	margin: 0 auto;
- }
+}
 
 #main{
 	overflow:hidden;
 	padding: 0 10px;
- }
+}
 
- 
+
 
 header#branding{
 	padding:  5px;
@@ -124,12 +124,12 @@ header#branding{
 }
 
 header#branding hgroup{
-	}
+}
 
 
 #primary {
 	margin: 25px 0 45px;
- } 
+} 
 
 #content {
 }
@@ -137,7 +137,7 @@ header#branding hgroup{
 article{
 }
 
- 
+
 #colophon {
 	clear: both;
 	display: block;
@@ -229,7 +229,7 @@ h1.entry-title{
 	margin: .67em 0 0;
 	text-indent: -9999px;
 	height: 85px;
- 
+
 }
 #site-description {
 	font-size: 1em;
@@ -250,133 +250,133 @@ body.page-home #secondary {
 
 #secondary {
 	font-size: 12px;
- 	background: #eee;
+	background: #eee;
 	padding:100px 0 0 15px;
 	max-width: 220px;
 	min-width: 220px;
- 
-		ul#portfolio-items{
-			background: #eee;
-			float: left;
+
+	ul#portfolio-items{
+		background: #eee;
+		float: left;
 		
-			li.current a{
-				color: yellow;
-				}
-			}
-	
-		li.current-menu-item, li.current-menu-parent{
-				a {
-					color: @gold;
-				}
-
-				li.current-menu-item, li.current-menu-item-sub{
-					font-weight: normal;
-					}
-				}
-				 		
-			
- 
-		#access {
-			display: block;
-			float: left;
-			margin: 20px auto 1em;
- 			border-top: 1px solid #ccc;
-			border-bottom: 1px solid #ccc;
-			padding: 15px 0;
-
-			a{
-				color: @gold;
-				font-size: 12px;
-				text-transform: uppercase;
-			}
-
-			ul {
-				list-style: none;
-				margin: 0;
-				padding-left: 0;
-				}
-			li {
-				float: left; 
-				position: relative;
-				border-right: 1px solid #aaa;
-				height: 13px;
-				margin-right: 4px;
-				padding-right: 5px;
-					a {
-						margin-top: -4px;
-					}
-			}
-
-			li:last-child {
-				border-right: none;
-				a {
-				padding: 0;
-					.transition(0);
-					}
-			}	
-				
-			a {
-				display: block;
-				line-height: 2em;
- 				text-decoration: none;
-			}
-			
-
-			ul ul {
-				box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-				-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-				-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-				display: none;
-				float: left;
-				position: absolute;
-				top: 2em;
-				left: 0;
-				z-index: 99999;
-				left: 100%;
-				top: 0;
-			}
-
-			ul ul a {
-				background: #dedede;
-				line-height: 1em;
-				padding: .5em .5em .5em 1em;
-				width: 10em;
-				height: auto;
-			}
-
-		 
-			ul li:hover > ul {
-				display: block;
-			}
-		} 
-  
-		a.mailto {
-			font-size: 11px;
+		li.current a{
+			color: yellow;
 		}
-		
-		span.mailto {
+	}
+	
+	li.current-menu-item, li.current-menu-parent{
+		a {
+			color: @gold;
+		}
+
+		li.current-menu-item, li.current-menu-item-sub{
+			font-weight: normal;
+		}
+	}
+
+
+
+	#access {
+		display: block;
+		float: left;
+		margin: 20px auto 1em;
+		border-top: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+		padding: 15px 0;
+
+		a{
+			color: @gold;
+			font-size: 12px;
+			text-transform: uppercase;
+		}
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding-left: 0;
+		}
+		li {
+			float: left; 
+			position: relative;
+			border-right: 1px solid #aaa;
+			height: 13px;
+			margin-right: 4px;
+			padding-right: 5px;
+			a {
+				margin-top: -4px;
+			}
+		}
+
+		li:last-child {
+			border-right: none;
+			a {
+				padding: 0;
+				.transition(0);
+			}
+		}	
+
+		a {
+			display: block;
+			line-height: 2em;
+			text-decoration: none;
+		}
+
+
+		ul ul {
+			box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+			-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+			-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+			display: none;
+			float: left;
+			position: absolute;
+			top: 2em;
+			left: 0;
+			z-index: 99999;
+			left: 100%;
+			top: 0;
+		}
+
+		ul ul a {
+			background: #dedede;
+			line-height: 1em;
+			padding: .5em .5em .5em 1em;
+			width: 10em;
+			height: auto;
+		}
+
+
+		ul li:hover > ul {
+			display: block;
+		}
+	} 
+
+	a.mailto {
+		font-size: 11px;
+	}
+
+	span.mailto {
 		float: left;
 		font-size: 11px;
 		margin-top: 25px;
 
-		}
-		
+	}
+
 }
- 
+
 
 /* #menu-main  */
 
 #secondary #access #menu-main li.current-menu-item a, 
 #secondary #access #menu-main li:hover > a {
-		color: #888;
+	color: #888;
 }
 
 /* #menu-portfolio  */
 
 a.disabled {
-    text-decoration: none;
-    color: black;
-    cursor: default;
+	text-decoration: none;
+	color: black;
+	cursor: default;
 }
 
 ul#menu-portfolio li {
@@ -385,10 +385,10 @@ ul#menu-portfolio li {
 
 .menu-portfolio-container {
 	clear: both;
-  		
-		a {
-			font-size: 12px;
-		}
+
+	a {
+		font-size: 12px;
+	}
 }
 
 
@@ -396,12 +396,12 @@ ul#menu-portfolio li {
 #holder li{
 	background-color:#F4F4F4;
 	list-style-type: none;
-  
+
 	/* Regular CSS3 box shadows (not inset): */
 
- 
+
 }
- 
+
 
 .clear{
 	/* This class clears the floated elements */
@@ -418,19 +418,19 @@ ul#menu-portfolio li {
 #tertiary {
 	float: left;
 	
-		ul.sub-menu{
-			display: inherit;
-			font-weight: normal;
-			margin-left: 5px;
-			font-size: 90%;
-				a {
-					color: #888;							
-				}
-				
-				li.current-menu-item a {
-					color: @gold;
-				}
-		}		
+	ul.sub-menu{
+		display: inherit;
+		font-weight: normal;
+		margin-left: 5px;
+		font-size: 90%;
+		a {
+			color: #888;							
+		}
+
+		li.current-menu-item a {
+			color: @gold;
+		}
+	}		
 }
 
 span#more-projects {
@@ -445,7 +445,7 @@ span#more-projects {
 	font-size: 12px;
 }
 
- 
+
 
 
 
@@ -453,23 +453,23 @@ span#more-projects {
 -------------------------------------------------------------- */
 body.blog, body.single-format-standard {
 	#primary {
- 		margin: 45px 0;
+		margin: 45px 0;
 	}
-img.blog-header {
-	margin-bottom: 45px;
-}
+	img.blog-header {
+		margin-bottom: 45px;
+	}
 	article {
 		margin: 0 0 55px 0;
 		padding-bottom: 25px;
 		border-bottom: 1px solid #ccc;
 	}
-  
+
 	article.post h1.entry-title {
 		font-size: 22px; 
- 		text-transform: uppercase;
+		text-transform: uppercase;
 		margin-bottom: 0px;		
 	}
-	 
+
 	header.entry-header {
 		border-bottom: 1px dotted #ccc;
 	}
@@ -478,25 +478,25 @@ img.blog-header {
 		position: relative;
 		top: 13px;
 
-			span.sep, span.byline, a time {
-				background: #eee;
-				color: #888;
-			}
+		span.sep, span.byline, a time {
+			background: #eee;
+			color: #888;
+		}
 
-			a time {
-				padding-right: 5px;
-			}
-}
+		a time {
+			padding-right: 5px;
+		}
+	}
 	span.cat-links{
 		background: url("images/bookmark.png") no-repeat;
 		padding-left: 15px;
-			a {
-				border-bottom: 1px dotted;
-				&:hover{
-					color: black;
-					border-bottom: 1px solid;
-				}
+		a {
+			border-bottom: 1px dotted;
+			&:hover{
+				color: black;
+				border-bottom: 1px solid;
 			}
+		}
 		
 	}
 	
@@ -506,23 +506,23 @@ img.blog-header {
 }
 
 
- 
+
 #holder li{
 	background-color:#F4F4F4;
 	list-style-type: none;
-  
+
 	/* Regular CSS3 box shadows (not inset): */
 
- 
+
 }
- 
+
 
 .clear{
 	/* This class clears the floated elements */
 	clear:both;
 }
 
- 
+
 span#more-projects {
 	margin-top: 35px;
 	font-weight: bold;
@@ -537,9 +537,9 @@ span#more-projects {
 
 .sidebar-nav {
 	margin-top: 15px;
-	 a {
+	a {
 		cursor: pointer;
-		}
+	}
 }
 
 /* Hide the scrolling bar by default */
@@ -552,7 +552,7 @@ span#more-projects {
 -------------------------------------------------------------- */
 body.blog, body.single-format-standard {
 	#primary {
- 		margin: 45px 0;
+		margin: 45px 0;
 	}
 	
 	article {
@@ -560,12 +560,12 @@ body.blog, body.single-format-standard {
 		padding-bottom: 25px;
 		border-bottom: 1px solid #ccc;
 	}
-  
+
 	article.post h1.entry-title {
- 		text-transform: uppercase;
+		text-transform: uppercase;
 		margin-bottom: 0px;		
 	}
-	 
+
 	header.entry-header {
 		border-bottom: 1px dotted #ccc;
 	}
@@ -574,25 +574,25 @@ body.blog, body.single-format-standard {
 		position: relative;
 		top: 12px;
 
-			span.sep, span.byline, a time {
-				background: #eee;
-				color: #888;
-			}
+		span.sep, span.byline, a time {
+			background: #eee;
+			color: #888;
+		}
 
-			a time {
-				padding-right: 5px;
-			}
-}
+		a time {
+			padding-right: 5px;
+		}
+	}
 	span.cat-links{
 		background: url("images/bookmark.png") no-repeat;
 		padding-left: 15px;
-			a {
-				border-bottom: 1px dotted;
-				&:hover{
-					color: black;
-					border-bottom: 1px solid;
-				}
+		a {
+			border-bottom: 1px dotted;
+			&:hover{
+				color: black;
+				border-bottom: 1px solid;
 			}
+		}
 		
 	}
 	
@@ -603,65 +603,65 @@ body.blog, body.single-format-standard {
 
 
  /* =Content
--------------------------------------------------------------- */
+ -------------------------------------------------------------- */
 
-.sticky {
-}
-.entry-meta {
-	clear: both;
-	display: block;
-	font-size: 80%;
-	font-style: italic;
-}
-.single-author .entry-meta .byline {
-	display: none;
-}
-#content nav {
-	display: block;
-	overflow: hidden;
-}
-#content nav .nav-previous {
-	float: left;
-	width: 50%;
-}
-#content nav .nav-next {
-	float: right;
-	text-align: right;
-	width: 50%;
-}
-#content #nav-above {
-	display: none;
-}
-.paged #content #nav-above,
-.single #content #nav-above {
-	display: block;
-}
-#nav-below {
-	margin: 1em 0 0;
-}
-.page-link {
-	clear: both;
-	margin: 0 0 1em;
-}
-.page .edit-link {
-	clear: both;
-	display: block;
-}
+ .sticky {
+ }
+ .entry-meta {
+ 	clear: both;
+ 	display: block;
+ 	font-size: 80%;
+ 	font-style: italic;
+ }
+ .single-author .entry-meta .byline {
+ 	display: none;
+ }
+ #content nav {
+ 	display: block;
+ 	overflow: hidden;
+ }
+ #content nav .nav-previous {
+ 	float: left;
+ 	width: 50%;
+ }
+ #content nav .nav-next {
+ 	float: right;
+ 	text-align: right;
+ 	width: 50%;
+ }
+ #content #nav-above {
+ 	display: none;
+ }
+ .paged #content #nav-above,
+ .single #content #nav-above {
+ 	display: block;
+ }
+ #nav-below {
+ 	margin: 1em 0 0;
+ }
+ .page-link {
+ 	clear: both;
+ 	margin: 0 0 1em;
+ }
+ .page .edit-link {
+ 	clear: both;
+ 	display: block;
+ }
 
-/* 404 page */
-.error404 .widget {
-	float: left;
-	width: 33%;
-}
-.error404 .widget .widgettitle,
-.error404 .widget ul {
-	margin-right: 1em;
-}
-.error404 .widget_tag_cloud {
-	clear: both;
-	float: none;
-	width: 100%;
-}
+ /* 404 page */
+ .error404 .widget {
+ 	float: left;
+ 	width: 33%;
+ }
+ .error404 .widget .widgettitle,
+ .error404 .widget ul {
+ 	margin-right: 1em;
+ }
+ .error404 .widget_tag_cloud {
+ 	clear: both;
+ 	float: none;
+ 	width: 100%;
+ }
 
 
 
@@ -675,32 +675,32 @@ body.blog, body.single-format-standard {
 
 .slideshow-meta {
 	font-size: 12px;
- 	margin-top: 5px;
-border-top: 1px solid #ccc;
+	margin-top: 5px;
+	border-top: 1px solid #ccc;
 	overflow: hidden;
- 	
- 	p.slideshow-title{
+
+	p.slideshow-title{
 		color: @gold;
 		padding: 0;
 		float: left;
 		display: inline;
- 		}
+	}
 
 	p.slideshow-caption {
 		padding: 0 5px;
 		float: left;
 		display: inline;
 		font-style: italic;
-		}
+	}
 
 	.slideshow-description{
- 		clear: both;	
+		clear: both;	
 	}
 	.slideshow-description p{
 		padding: 0;
 		font-size: 12px;
 		overflow:hidden;
- 		margin: 0!important;	
+		margin: 0!important;	
 	}
 }
 
@@ -718,17 +718,17 @@ border-top: 1px solid #ccc;
 	margin: 0;
 }
 .pager {
- 	position: absolute;
+	position: absolute;
 	bottom: 25px;
 	right: 0;
- 	z-index: 100;
- 		a{
-			font-size: 13px;
-		}
-		a.activeSlide{
-			color: @gold;
-			text-decoration: none;
-		}
+	z-index: 100;
+	a{
+		font-size: 13px;
+	}
+	a.activeSlide{
+		color: @gold;
+		text-decoration: none;
+	}
 }
 .slideshow-wrapper .pager .numbers a.activeSlide {
 	text-decoration: none;
@@ -742,20 +742,20 @@ border-top: 1px solid #ccc;
 body.page-who-is #content {
 	margin-top: 25px;
 }
-  
+
 .who-is {
 	float: left;
 	background: white;
 	margin-bottom: 25px;
 	padding: 25px;
 	width: 290px;
-		
-		h4 {
-			text-transform: uppercase;
-			font-style: italic;
-			font-size: 16px;
-			margin-bottom: 5px;
-		}
+
+	h4 {
+		text-transform: uppercase;
+		font-style: italic;
+		font-size: 16px;
+		margin-bottom: 5px;
+	}
 }
 
 .hello {
@@ -763,23 +763,23 @@ body.page-who-is #content {
 	margin-bottom: 25px;
 	background: #fff;
 	padding: 25px;
-		
-		h2{
-			font: 200 60px archer;
-			margin: 0;
-		}
+
+	h2{
+		font: 200 60px archer;
+		margin: 0;
+	}
 }
 
 .avatar img {
 	width: 275px;
 }
- 
+
 .twentyfour-hours {
 	border: 5px solid @gold;
- 	 
-		a {
-			color: @gold;
-		}
+
+	a {
+		color: @gold;
+	}
 } 
 
 
@@ -796,10 +796,42 @@ body.page-who-is #content {
 .sincerely {
 	font: 35px Archer;
 }
- 
 
 
 
+
+/* =Mobile page
+-------------------------------------------------------------- */
+
+
+body.page-m{
+	#main { padding: 0;}
+	#branding { padding: 0;}
+
+	hgroup { 
+		width: 100%;
+		p { text-align: center;}
+	}
+
+	.mobile-logo { 
+		width: 310px;	
+ 	}
+	#secondary {
+		float: left;
+		width: 100%;
+		padding: 100px 0 0;
+		max-width: 100%;
+	
+	}
+	.contact-line { 
+		float: left;
+		background: #888;
+		margin-top: 30px;
+		width: 100%;
+		display: block;
+		padding: 15px 40px 5px;
+	}
+}
 
 
 
@@ -1033,14 +1065,14 @@ article.comment {
 	font-style: italic;
 	font-size: 12px;
 	color: white;
- 		a {
-			color: white;
-		}
-		
-		span.sep {
-			margin: 0 5px;
-		}
-		
+	a {
+		color: white;
+	}
+
+	span.sep {
+		margin: 0 5px;
+	}
+
 }
 
 
@@ -1052,34 +1084,54 @@ img::-moz-selection	{background: transparent;}
 body {-webkit-tap-highlight-color: rgb(255,255,158);}
 
 
+/* =Group/Clearfix
+-------------------------------------------------------------- */
+
+.group:before,
+.group:after {
+    content:"";
+    display:table;
+}
+.group:after {
+    clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+.clear {
+	clear: both;
+	display: block;
+}
+
 
 
 
 /* =Reponsive styles
 -------------------------------------------------------------- */
 
- 
+
 
 @media only screen and (min-width: 368px) and (max-width: 985px) {
 
 	
- 	.hello{
+	.hello{
 		width: 290px;
 		.transition(1s, ease-out);
 
-			h2 {
-				font-size: 28px;
-				.transition(1s, ease-out);
+		h2 {
+			font-size: 28px;
+			.transition(1s, ease-out);
 
-			}
 		}
+	}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
 	body {}
 	
- 
+
 	
 	
 }
@@ -1102,24 +1154,24 @@ px      68    160    252    */
 	}
 
 	#secondary {
- 		max-width: 300px;
+		max-width: 300px;
 		min-width: 300px;
 		margin: 0 auto;
-		}
+	}
 
 
 
 
 }
-  
- 
+
+
 
 
 /*		iPhone wide Layout: 480px.  */
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 
- 
+
 	
 	body {}
 

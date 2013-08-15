@@ -42,7 +42,7 @@ jQuery(function($){
 
 
 	//Show 12 links at a time in the portfolio menu
-	$('#menu-item-758, #menu-item-56').click(function(e) { // need to accept the argument here
+	$('#menu-item-758, #menu-item-56, #menu-item-894').click(function(e) { // need to accept the argument here
 		e.preventDefault(); // to be able to use it here (firefox was still letting you go to the link)
 		$('#tertiary').slideToggle(); // 400 is the default duration so you don'e need to supply it
 	});
@@ -69,7 +69,7 @@ $('.sub-menu').hide(); //Hide children by default
 
  //Apply .current-menu-item to Portfolio when on a project page
  if( $('body').hasClass('single-projects') ){
-		$('#menu-item-758, #menu-item-56').addClass('current-menu-item');
+		$('#menu-item-758, #menu-item-56, #menu-item-894').addClass('current-menu-item');
 }
  
  

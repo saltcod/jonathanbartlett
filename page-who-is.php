@@ -45,8 +45,8 @@ get_sidebar(); ?>
 					<strong><em>JONATHAN BARTLETT</em></strong> <br />
 					<a href="mailto:jb@bartlettstudio.com">jb@bartlettstudio.com</a> <br />
 					336.345.0369<br />
-					Follow me on <a href="http://twitter.com/#">Twitter</a><br />
-					Find me on <a href="#">Illoz</a><br />
+					Follow me on <a href="http://twitter.com/seejbdraw">Twitter</a><br />
+					Find me on <a href="http://www.illoz.com/jonathanbartlett/">Illoz</a><br />
 				</div>	
 
 
@@ -56,10 +56,9 @@ get_sidebar(); ?>
 						<li>The Art Directors Club Young Guns 9</li>
 						<li>American Illustration Annual </li>
 						<li>The Society of Illustrators Annual </li>
-					  <li>(silver medal 2011)</li>
 						<li>Spectrum Fantasy Art Annual</li>
-						<li>3 x3 Magazine Annual <br> (silver medal 2009, 2010)</li>
-						<li>New England Press Association <br>(silver medal 2009)</li>
+						<li>3 x3 Magazine Annual</li>
+						<li>New England Press Association</li>
 						<li>CMYK Magazine	</li>
 					</ul>
 				</div>
@@ -99,7 +98,7 @@ get_sidebar(); ?>
 
 					<div class="things-i-love who-is">
 							<h4>THINGS I LOVE:</h4>
-							<p>The woods, humor, hard work, bow ties, leather shoes, rap music, rock and roll, ice Hockey, Marty McFly, Claude Monet, and China.	</p>
+							<p>The woods, humor, hard work, bow ties, leather shoes, rap music, rock and roll, ice hockey, Marty McFly, Claude Monet, and China.	</p>
 						</div>
 
 
