@@ -750,40 +750,51 @@ body.page-who-is #content {
 }
 /* =Mobile page
 -------------------------------------------------------------- */
-body.page-m #main {
+body.page-mobile #main {
   padding: 0;
 }
-body.page-m #branding {
+body.page-mobile #branding {
   padding: 0;
+  margin-bottom: 50px;
 }
-body.page-m hgroup {
+body.page-mobile hgroup {
   width: 100%;
 }
-body.page-m hgroup p {
+body.page-mobile hgroup p {
   text-align: center;
 }
-body.page-m .mobile-logo {
+body.page-mobile .mobile-logo {
   width: 310px;
 }
-body.page-m #secondary {
+body.page-mobile #secondary {
   float: left;
   width: 100%;
   padding: 100px 0 0;
   max-width: 100%;
 }
-body.page-m .contact-line {
+body.page-mobile .contact-line {
   float: left;
   background: #888;
   margin-top: 30px;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 100;
   width: 100%;
   display: block;
   padding: 15px 40px 15px;
   color: white;
 }
-body.page-m .contact-line a {
+body.page-mobile .contact-line a {
   color: white;
+}
+body.page-mobile .wp-caption img {
+  width: 100%;
+  height: auto;
+}
+body.page-mobile .entry-content h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 25px;
 }
 /* Buttons */
 button {

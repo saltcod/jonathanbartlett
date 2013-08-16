@@ -14,7 +14,7 @@ jQuery(function($){
 	// body size is too large for the window (window resize keeps firing)
 	// Set the height of the sidebar == to the window height
 	
-    if ( !$('body').hasClass('page-m')) {
+    if ( !$('body').hasClass('page-mobile')) {
         console.log('mobile');
          $('#secondary').height($(window).height());
 
