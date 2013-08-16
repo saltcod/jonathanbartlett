@@ -42,11 +42,12 @@
 <script type="text/javascript">
 <!--
 if (screen.width <= 699) {
-document.location = "http://bartlettstudio.com/mobile/";
+document.location = "http://bartlettstudio.com/mobile";
 }
 //-->
 </script>
 
+ 
  
 
 <!-- Typekit -->
