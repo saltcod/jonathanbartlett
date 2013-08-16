@@ -37,6 +37,18 @@
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/js/jscrollpane.css" type="text/css" media="screen" title="no title" charset="utf-8">
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>" type="text/css" media="screen, projection" /> 
 
+<!-- Mobile -->
+
+<script type="text/javascript">
+<!--
+if (screen.width <= 699) {
+document.location = "http://localhost:8888/bartlettstudio/mobile";
+}
+//-->
+</script>
+
+ 
+
 <!-- Typekit -->
 <script type="text/javascript" src="http://use.typekit.com/vty4lrm.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
