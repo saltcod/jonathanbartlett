@@ -42,7 +42,7 @@
 <script type="text/javascript">
 <!--
 if (screen.width <= 699) {
-document.location = "http://localhost:8888/bartlettstudio/mobile";
+document.location = "http://bartlettstudio.com/mobile/";
 }
 //-->
 </script>
