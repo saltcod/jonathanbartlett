@@ -17,14 +17,14 @@ get_sidebar('mobile'); ?>
 
 <div id="primary" class="eightcol last">
 	<div id="content" role="main">
-		
+
 		<?php while ( have_posts() ) : the_post(); ?>
 
-		<?php get_template_part( 'content', 'page' ); ?>
+		<?php get_template_part( 'content', 'mobile' ); ?>
 
 
 	<?php endwhile; // end of the loop. ?>
-	
+
 </div><!-- #content -->
 </div><!-- #primary -->
 

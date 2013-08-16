@@ -3,25 +3,31 @@ jQuery(function($){
 	var domain = "http://bartlettstudio.com";
 
  	// Backstretch
-	var images=[domain+"/wp-content/themes/jonathanbartlett/images/bg_1.jpg", domain+"/wp-content/themes/jonathanbartlett/images/bg_2.jpg", domain+"/wp-content/themes/jonathanbartlett/images/bg_3.jpg"];
-	var random_image_filename = Math.floor(images.length * Math.random());
+   var images=[domain+"/wp-content/themes/jonathanbartlett/images/bg_1.jpg", domain+"/wp-content/themes/jonathanbartlett/images/bg_2.jpg", domain+"/wp-content/themes/jonathanbartlett/images/bg_3.jpg"];
+   var random_image_filename = Math.floor(images.length * Math.random());
 
-	if($('body').hasClass('home')){
-		$.backstretch(images[random_image_filename]);  
-	}
+   if($('body').hasClass('home')){
+      $.backstretch(images[random_image_filename]);  
+  }
 
 	// TODO: This snippet of code is causing havoc on the page in chrome if the 
 	// body size is too large for the window (window resize keeps firing)
 	// Set the height of the sidebar == to the window height
-	$('#secondary').height($(window).height());
+	
+    if ( !$('body').hasClass('page-m')) {
+        console.log('mobile');
+         $('#secondary').height($(window).height());
 
-	// do the same thing again when the window is resized
-	$(window).resize(function(){
-		$('#secondary').height($(window).height());
-		console.log('resizing');
-	});
-	// End TODO
-		
+        // do the same thing again when the window is resized
+        $(window).resize(function(){
+            $('#secondary').height($(window).height());
+            console.log('resizing');
+    });
+    };
+ 	// End TODO
+
+
+
 
 
 
@@ -31,14 +37,14 @@ jQuery(function($){
 
 
 //Call jQuery Masonry on the Who Is page
-	var $container = $('body.page-who-is #primary #content');
+var $container = $('body.page-who-is #primary #content');
 
-	$container.imagesLoaded( function(){
-	  $container.masonry({
-	    itemSelector : '.who-is',
-			columnWidth: 65
-	  });
-	});
+$container.imagesLoaded( function(){
+ $container.masonry({
+   itemSelector : '.who-is',
+   columnWidth: 65
+});
+});
 
 
 	//Show 12 links at a time in the portfolio menu
@@ -52,37 +58,37 @@ jQuery(function($){
 		$('#tertiary').hide();
 	}
 
- 
+
 
 //Make submenus fold down when you click on their parents
 
 $('.sub-menu').hide(); //Hide children by default
 
-    $('li.parent-menu-item > a').click(function(e){
+$('li.parent-menu-item > a').click(function(e){
     e.preventDefault(); 
     $(this).siblings(".sub-menu").slideToggle(200);
-	$(".sub-menu li").addClass("current-menu-item-sub");
-  
+    $(".sub-menu li").addClass("current-menu-item-sub");
+
 });
 	// Show the sub-menu of the current parent
 	$('.current-menu-parent > ul.sub-menu').show(200);
 
  //Apply .current-menu-item to Portfolio when on a project page
  if( $('body').hasClass('single-projects') ){
-		$('#menu-item-758, #menu-item-56, #menu-item-894').addClass('current-menu-item');
+  $('#menu-item-758, #menu-item-56, #menu-item-894').addClass('current-menu-item');
 }
- 
- 
 
- 
+
+
+
     // Paginate the portfolio    
     $.fn.menuPaginate = function (numitems, menuid) {
         return this.each(function () {
             var $items = $('ul#'+menuid+' > li', this), 
-                mod = 12, max = $items.length,
-                hash, range, 
-                $prev = $('.prev', this),
-                $next = $('.next', this);
+            mod = 12, max = $items.length,
+            hash, range, 
+            $prev = $('.prev', this),
+            $next = $('.next', this);
             
             // Mod needs to be set before defining the function showRange
             if(typeof numitems != 'undefined' && parseInt(numitems)) {
@@ -118,7 +124,7 @@ $('.sub-menu').hide(); //Hide children by default
             
             var parseHash = function () {
                 var hash  = window.location.hash.split('/'),
-                    range = hash[1].split('-');
+                range = hash[1].split('-');
                 
                 range = [parseInt(range[0]-1), parseInt(range[1])]; // 0 indexed, taking into account slicing....
                 range[0] = range[0] < 0 ? 0 : range[0];
@@ -150,8 +156,8 @@ $('.sub-menu').hide(); //Hide children by default
                 showRange([range[0]+mod, range[1]+mod]);
             });
         });
-    };
-    
+};
+
     // We call this function on the container because it will be used 
     // as context to find the menu, its items, and the page controls.
     // The ID for the menu is specified to get selector together which 
@@ -159,8 +165,8 @@ $('.sub-menu').hide(); //Hide children by default
     $('#tertiary').menuPaginate(12, 'menu-portfolio');
     // Make sure links from the same domain receive the current hash behind their url when you click on them
     $('a[href^="'+domain+'"]').click(function () { 
-	var $this = $(this); 
-	$this.attr('href', $this.attr('href') + window.location.hash); 
-    });
+       var $this = $(this); 
+       $this.attr('href', $this.attr('href') + window.location.hash); 
+   });
     
 }); //Last
