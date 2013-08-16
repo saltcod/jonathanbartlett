@@ -38,15 +38,17 @@
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>" type="text/css" media="screen, projection" /> 
 
 <!-- Mobile -->
+<?php if (! is_page('mobile')): ?>
+  
+	<script type="text/javascript">
+	<!--
+	if (screen.width <= 699) {
+	document.location = "http://bartlettstudio.com/mobile";
+	}
+	//-->
+	</script>
 
-<script type="text/javascript">
-<!--
-if (screen.width <= 699) {
-document.location = "http://bartlettstudio.com/mobile";
-}
-//-->
-</script>
-
+<?php endif; ?>
  
  
 
