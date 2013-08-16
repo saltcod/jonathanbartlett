@@ -1,4 +1,8 @@
 jQuery(function($){
+
+// Don't do anything on the mobile page
+if ( !$('body').hasClass('page-mobile')) {
+
 	// Keep it simple,ekeep the domain here
 	var domain = "http://bartlettstudio.com";
 
@@ -14,7 +18,7 @@ jQuery(function($){
 	// body size is too large for the window (window resize keeps firing)
 	// Set the height of the sidebar == to the window height
 	
-    if ( !$('body').hasClass('page-mobile')) {
+    
         console.log('mobile');
          $('#secondary').height($(window).height());
 
@@ -23,7 +27,7 @@ jQuery(function($){
             $('#secondary').height($(window).height());
             console.log('resizing');
     });
-    };
+    
  	// End TODO
 
 
@@ -169,4 +173,5 @@ $('li.parent-menu-item > a').click(function(e){
        $this.attr('href', $this.attr('href') + window.location.hash); 
    });
     
+};
 }); //Last
