@@ -765,6 +765,7 @@ body.page-mobile hgroup p {
 }
 body.page-mobile .mobile-logo {
   width: 310px;
+  padding: 0 25px;
 }
 body.page-mobile #secondary {
   float: left;
@@ -780,7 +781,7 @@ body.page-mobile .contact-line {
   font-weight: 100;
   width: 100%;
   display: block;
-  padding: 15px 40px 15px;
+  padding: 15px 0;
   color: white;
 }
 body.page-mobile .contact-line a {
