@@ -39,8 +39,7 @@
 
 <!-- Mobile -->
 
-<?php /* just uncomment all this
-<?php if (! is_page('mobile')): ?>
+ <?php if (! is_page('mobile')): ?>
   
 	<script type="text/javascript">
 	<!--
@@ -53,8 +52,7 @@
 <?php endif; ?>
  
  
-  end comment out*/?> 
-
+ 
 <!-- Typekit -->
 <script type="text/javascript" src="http://use.typekit.com/vty4lrm.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
